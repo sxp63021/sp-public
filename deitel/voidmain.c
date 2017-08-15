@@ -1,3 +1,20 @@
+/*
+  voidmain.c
+  point1:
+  This program is to say we can called void main() in C
+  program, but not in C++
+
+  point2:
+  Another point noted in this program is to try to call
+  another function before main()
+  Same approach can be used to call a diff program after main
+
+  See more explanation in http://bhushanverma.blogspot.in/2010/09/how-to-call-function-before-main-and.html
+
+  This approach is applicable to Linux, in solaris for unix
+  we use pragma
+
+*/ 
 #include <stdio.h>
 
 int user_main(void) __attribute__ ((constructor));
