@@ -14,21 +14,23 @@ int main() {
 	// Declare second integer, double, and string variables
 	int my_i;
 	double my_d;
-	string my_s, tmp_s;
-	char c;
+	string my_s;
+	char c; int nReturn = 0;
 
 	// Read and save an integer, double, and String to your variables
 	cin >> my_i; cin >> my_d; 
 
 	// see if there are any other strings to be read
  	// string is space delimted, read until end of line
-	cin >> my_s;
+	//cin >> my_s;
+	cin.clear(); // this should flush the buffer
 
         do {
 		cin.get(c);	
 
 		if ('\n' == c) {
-			break;
+			nReturn++;
+			if (nReturn > 1) break;
 		} else {
 			my_s += c;
 		}
