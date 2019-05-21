@@ -1,0 +1,18 @@
+
+: /home/satishp/rje/src/sol>
+ls
+Exp.cc  Exp.h  Exp.o  main.cc  main.o  myprog  Node.cc  Node.h  Node.o
+: /home/satishp/rje/src/sol>
+       
+: /home/satishp/rje/src/sol>
+       
+: /home/satishp/rje/src/sol>
+g++ -Wall -g -c Exp.cc; g++ -Wall -g -c Node.cc; g++ -Wall -g -c main.cc
+: /home/satishp/rje/src/sol>
+g++ -g Node.o Exp.o main.o -lm -o myprog
+: /home/satishp/rje/src/sol>
+./myprog
+ Enter equation to solve: 5-4+2*3
+num elements in nodeStack : 1
+Solution of 5-4+2*3 is: 7
+
