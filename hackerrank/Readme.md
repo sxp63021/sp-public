@@ -21,10 +21,12 @@ Solutions are Coded using C++ and Python
 |  8  | [Dict N Maps](https://www.hackerrank.com/challenges/30-dictionaries-and-maps)                                       |   30   | [day08.cpp](https://github.com/sxp63021/sp-public/blob/master/hackerrank/day08.cpp)                |
 |  9  | [Recursion](https://www.hackerrank.com/challenges/30-recursion)                                       |   30   | [day09.cpp](https://github.com/sxp63021/sp-public/blob/master/hackerrank/day09.cpp)                |
 | 10  | [Binary Numb](https://www.hackerrank.com/challenges/30-binary-numbers)                                       |   30   | [day10.cpp](https://github.com/sxp63021/sp-public/blob/master/hackerrank/day10.cpp)                |
-|  2  | []()                                       |   30   | [day01.cpp]()                |
-|  2  | []()                                       |   30   | [day01.cpp]()                |
-|  2  | []()                                       |   30   | [day01.cpp]()                |
-|  2  | []()                                       |   30   | [day01.cpp]()                |
-|  2  | []()                                       |   30   | [day01.cpp]()                |
-|  2  | []()                                       |   30   | [day01.cpp]()                |
-|  2  | []()                                       |   30   | [day01.cpp]()                |
+| 11  | [2D Arrays](https://www.hackerrank.com/challenges/30-2d-arrays)                                       |   30   | [day11.cpp](https://github.com/sxp63021/sp-public/blob/master/hackerrank/day11.cpp)                |
+| 12  | [Inheritance](https://www.hackerrank.com/challenges/30-inheritance)                                       |   30   | [day12.cpp](https://github.com/sxp63021/sp-public/blob/master/hackerrank/day12.cpp)                |
+| 13  | [Abstract Classes](://www.hackerrank.com/challenges/30-abstract-classes)                                       |   30   | [day13.cpp](https://github.com/sxp63021/sp-public/blob/master/hackerrank/day13.cpp)                |
+| 14  | [Scope](https://www.hackerrank.com/challenges/30-scope)                                       |   30   | [day14.cpp](https://github.com/sxp63021/sp-public/blob/master/hackerrank/day14.cpp)                |
+| 15  | [Linked Lis](https://www.hackerrank.com/challenges/30-linked-list)                                       |   30   | [day15.cpp](https://github.com/sxp63021/sp-public/blob/master/hackerrank/day15.cpp)                |
+| 16  | [Exceptions - Str to Int](https://www.hackerrank.com/challenges/30-exceptions-string-to-integer) |   30   | [day16.cpp](https://github.com/sxp63021/sp-public/blob/master/hackerrank/day16.cpp)                |
+| 17  | [More Exceptions](https://www.hackerrank.com/challenges/30-more-exceptions)                                       |   30   | [day17.cpp](https://github.com/sxp63021/sp-public/blob/master/hackerrank/day17.cpp)                |
+| 18  | [Queues Stacks](https://www.hackerrank.com/challenges/30-queues-stacks)                                       |   30   | [day18.cpp](https://github.com/sxp63021/sp-public/blob/master/hackerrank/day18.cpp)                |
+| 19  | [Interfaces]()                                       |   30   | [day19.cpp]()                |
