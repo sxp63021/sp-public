@@ -1,0 +1,27 @@
+
+Q. Why use Linux?
+A. Linux is an open-source, multi-tasking, multi-user, operating system with 
+   a track record of stability and a massive ecosystem, available for “free”.
+
+April 2019
+==========
+
+Reference: https://phoenixnap.com/kb/linux-kernel-5-0-released
+Linux Kernel 5.0 upgrade is finally out.
+Since Linux foundation does not do "feature-based releases"
+ calling this release 5.0 instead of 4.22
+
+1. AMC FreeSync display Support
+2. Power Management
+3. Data Encryption
+4. Support for Raspberry Pi Touchscreen
+5. Advanced ARM Hardware Support
+6. Early Support for NVIDIA Turing Architecture
+   - One of the most advanced GPU Architectures in the marker
+
+Reference:
+1. https://www.youtube.com/watch?v=bhopW92Qxw8
+   ForrestKnight - explains how he setup his Ubuntu Setup for Software Development
+   Eclipse - Formatter -> GoogleStyle
+   Eclipse - Java Editor -> Save Actions -> some examples
+

@@ -43,7 +43,7 @@ void producer(queue<int> &q) {
 	cout << "Starting Producer" << endl;
 	for (int i = 0; i < 10; i++) {
         unique_lock<mutex> lck(mu);
-		//cout << "Putting element " << i << endl;
+		cout << "Putting element " << i << endl;
 		put(q, i);
 		lck.unlock();
 		cvc.notify_one();
