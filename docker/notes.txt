@@ -1,0 +1,30 @@
+
+Docker Install commands
+========================
+1. sudo apt install docker
+   might have to add the repo first
+   sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu bionic stable"
+   apt-cache policy docker-ce
+2. sudo apt install docker-ce
+3. sudo systemctl status docker -> check if docker is running as a service
+   sudo usermod -aG docker ${USER} -> do this so the user can run docker without using sudo
+   -OR- sudo usermod -aG docker $(whoami)
+   Caution: One needs to logout and login to see if docker is working without sudo
+4. sudo docker run hello-world -> first application to check if docker is running
+
+5.  docker run hello-world
+6. docker search debian | grep ubuntu
+7. docker images -> to see what images are available on your own system
+8. sudo apt install docker-compose
+
+04/03/2020
+    Looking for novice things to do on docker
+
+9. docker pull busybox
+10. docker run busybox
+11. docker run busybox echo "Hello World from busybox"
+12. docker run ps
+13. docker run ps -a
+14. docker run -it busybox sh -> to keep running a shell in the busy box, so one can see everything
+
+
