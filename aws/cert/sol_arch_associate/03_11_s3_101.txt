@@ -1,0 +1,84 @@
+S3 = Simple Storage Service
+
+It is a scalable, high-speed, web-based cloud storage service
+designed for online backup and archiving of data and applications
+on AWS. 
+
+Amazon S3 was designed with a minimal feature set and created to make
+web-scale computing easier for developers.
+
+1. S3 Standard
+        99.99% availability, high durability, stored redundancy
+        accross multiple devices in multiple facilities
+        designed to sustain loss of 2 facilities concurrently
+
+2. S3 - IA (Infrequently Accessed)
+        For data that is accessed less frequently
+        requires rapid access when needed. 
+        Lower fee than S3, but charged a retrieval fee
+
+3. S3 One Zone - IA
+        Does not support multiple Availability Zone data resilience
+
+4. S3 - Intelligent Tiering
+        Data will be automatically moved for most cost-effective
+        access tier.
+
+5. S3 - Glacier
+        secure, durable and low-cost storage class
+6. S3 - Glacier Deep Archive 
+        amazon's lowest-cost storage retrieval time of 12 hrs
+
+S3-Charges
+==============
+
+Charged on the following metrics
+a. Storage amount
+b. Number of requests
+c. Storage Management Pricing
+d. Data Transfer Pricing
+
+
+S3-Charges
+==============
+
+Charged on the following metrics
+a. Storage amount
+b. Number of requests
+c. Storage Management Pricing
+d. Data Transfer Pricing
+e. Transfer Acceleration
+f. Cross Region Replication Pricing
+
+=============
+EXAM TIPS
+=============
+
+S3 is Object Based. i.e allows you to upload files.
+Files can be 0 to 5 Tb
+There is unlimited storage
+Files are stored in Buckets
+S3 is a universal namespace
+
+* Not suitable to install an operation system or DB
+  For OS we will need block based storage.
+  S3 is only object based storage
+
+* Successful uploads will generate HTTP 200 status code
+* You can turn on MFA 
+
+Key Fundamentals of S3 are
+==========================
+
+* Key (This is the name of the object)
+* Value (This is simply the data and is made up of seq of bytes)
+* Version ID (Important for versioning)
+* Metadata (Data about data you are storing)
+* Subresources;
+  Access Control Lists
+  Torrent
+
+* Read after Write consistency for PUTS of new Objects
+* Eventual Consistency for overwrite PUTS
+
+S3 FAQ before exam - todo

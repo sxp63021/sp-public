@@ -1,0 +1,23 @@
+
+Exam Tips
+=========
+
+What Have We Learnt So Far?
+
+a. IAM is universal. It does not apply to regions at this time.
+b. The "root account" is simply the account created when first setup
+   your AWS account. It has complete Admin access.
+c. New Users have NO permissions when first created
+d. New Users are assigned Access Key ID and Secret Access Keys when
+   first created
+e. These are not the same as a password. You cannot use the Access
+   key ID & Secret Access Key to Login into the console. You can use
+   this to access AWS via the APIs and Command Line, however
+f. You only get to view these once. If you loose them, you have to
+   regenerate them. So, save them in a secure location.
+
+What you have learnt so Far?
+
+a. Always setup MFA on your root account
+b. You can create and customise your own password rotation policies.
+

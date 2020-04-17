@@ -1,0 +1,18 @@
+
+Attempting to build a Chatbot in AWS
+
+Day2:
+https://aws.amazon.com/lex/pricing/
+
+What is Cloud Formation:
+https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-template-resource-type-ref.html
+
+To Build a Bot in .NET
+https://aws.amazon.com/getting-started/hands-on/bots-just-got-better-net-toolkit-lex-lambda-cognito/
+
+Download Visual Studio: https://visualstudio.microsoft.com/downloads/
+
+
+
+
+

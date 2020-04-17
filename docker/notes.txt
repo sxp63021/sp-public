@@ -26,5 +26,13 @@ Docker Install commands
 12. docker run ps
 13. docker run ps -a
 14. docker run -it busybox sh -> to keep running a shell in the busy box, so one can see everything
+	a. #uptime
+	b. #...
+15. docker rm $(docker ps -a -q -f status=exited) -> delete docker stuff not running
+16. docker container prune
+     -OR-
+    docker rmi -> delete images you no longer need
+
+
 
 

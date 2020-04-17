@@ -1,0 +1,26 @@
+TITLE:  Lab - Sharing S3 Buckets across Accounts
+
+=================================
+S3 - Cross-Account Access
+=================================
+3 Different ways to share S3 buckets accross accounts
+* Using Bucket Policies and IAM (applies across the entire bucket)
+  Programmatic Access Only.
+* Using Bucket ACLs & IAM (individual object). Programmatic Access Only.
+* Cross-account IAM Roles. Programatic AND Console access.
+
+=========
+Exam Tips
+=========
+
+3 Different ways to share S3 buckets accross accounts
+
+* Using Bucket Policies & IAM (applies across the entire bucket)
+  Programmatic Access Only
+* Using Bucket ACLs & IAM (individual objects). Programatic Access Only
+* Cross-account IAM Roles. Programmatic AND Console access
+
+
+
+
+

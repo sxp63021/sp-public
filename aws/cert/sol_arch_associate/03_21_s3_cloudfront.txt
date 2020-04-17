@@ -1,0 +1,62 @@
+TITLE:  S3 - Cloud Front
+
+=================================
+Cloud Front - is a CDN (Content Delivery Network)
+
+Edge Location - This is the lcoation where content will be cached
+This is separate to an AWS Region/AZ
+
+Origin - This is the origin of all the files that the CDN will distribute
+This can be an S3 Bucket, an EC2 instance, an Elastic Load Balancer, or 
+Route53.
+
+Distribution - This is the name given to the CDN which consists of a 
+collection of Edge Locations
+
+Things gets cached in the Edge Location for a fraction of second/min
+this is a configuration settings
+
+=================================
+
+=================================
+What is Cloud Front?
+
+Amazon Cloud Front can be used to deliver your entire website, including
+dynamic, static, streaming, and interactive content using a global network
+of edge locations. Requests for your content are automatically routed the
+nearest edge location, so content is delivered with the best possbile 
+performance.
+
+Cloud Front - Key Terminology
+Web Distribution - Typically used for Websites.
+RTMP - Used for Media Streaming - used mainlin Adobe
+
+=================================
+
+=========
+Exam Tips
+=========
+
+* Edge Location - This is the location where content will be cached.
+                  This is seperate to an AWS Region/AZ
+
+* Origin - This is the origin of all the files that the CDN will distribute.
+  This can be either an S3 Bucket, an EC2 Instance, an Elastic Load Balancer,
+  or Route53.
+
+* Distribution - This is the name given to the CDN which consists of a
+  collection of Edge Locations.
+
+Sample of Distributions are ...
+1 Web Distribution - Typically used for Websites.
+
+2 RTMP - Used for Media Streaming (Adobe, Flash)
+
+---
+* Edge Locations are not READ only - you can write to them too
+  (i.e - put an object onto them)
+* Objects are cached for the life of the TTL (time to live)
+* You can clear cached objects, but you will be charged
+
+
+* CloudFront = Edge Location

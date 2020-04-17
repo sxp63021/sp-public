@@ -1,0 +1,33 @@
+TITLE:  LAB - CROSS REGION REPLICATION
+
+=================================
+For Replication to be enabled, Versioning has to be enabled first
+
+When replicating a bucket
+ - we need to have a new name to the s3 bucket
+ - we can change the owner if needed
+ - we can also change the storage type (S3-IA)
+
+When doing cross region replication, it will not get the files
+already in the existing s3 bucket, we need to go ahead and upload them
+
+If you put a delete marker in one bucket in region1, it will not put
+a delete marker in the other bucket in cross region replication.
+
+Replicate does not help to delete versions of files.
+=================================
+
+=========
+Exam Tips
+=========
+
+* Versioning must be enabled on both the source and destination buckets
+* Files in an existing bucket are not replicated automatically
+* All susequent updated files will be replicated automatically
+* Delete markers are not replicated
+* Deleting individual versions or delete markers will not be replicated
+* Understand what Cross Region Replication is at a high level.
+
+
+
+

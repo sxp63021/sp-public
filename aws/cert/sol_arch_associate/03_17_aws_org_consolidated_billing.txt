@@ -1,0 +1,36 @@
+
+What is AWS Organizations?
+
+"AWS Organizations is an account management service
+ that enables you to consolidate multiple AWS accounts into an
+ organization that you create and centrally manage."
+
+Paying account can be independent. Cannot access resources of
+the other accounts.
+
+All linked accounts are independent.
+
+Example of Linked Accounts
+	- Test/Dev
+	- Production
+	- Back Office
+
+Adv. of Consolidated Billing
+	- One Bill per AWS account
+	- Very easy to track charges and allocate costs
+	- Volume pricing discount
+
+
+=========
+Exam Tips
+=========
+
+Some Best Practices With AWS Organizations
+
+* Always enable MFA (Muti Factor Authentication) on root account
+* Always use a strong and complex password on root account
+* Paying account should be used for billing purposes only. Do not
+  deploy resources into the paying account.
+* Enable/Disable AWS services using Service Control Policies (SCP) either on 
+  OU (Organizational Unit) or on individual accounts.
+

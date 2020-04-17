@@ -1,0 +1,41 @@
+TITLE:  S3 - Storage Gateway
+
+=================================
+Q. What is Storage Gateway?
+
+AWS Storage Gateway is a service that connects an on-premises software
+applicance with cloud-based storage to provide seamelss and secure integration
+between an organization's on-premises IT environment and AWS's storage infra.
+
+The service enables you to securely store data to the AWS cloud for scalable
+and cost-effective storage.
+
+Stoage Gatway Types
+There are three (3) diff types of Storage
+
+1. File Gateway (NFS and SMB)
+2. Volume Gateway (iSCSI)
+   - Stored Volumes
+   - Cached Volumes
+3. Tape Gateway
+
+=================================
+
+=========
+Exam Tips
+=========
+
+File Gateway
+	* File Gateway - For flat files, stored directly on S3
+
+Volume Gateway
+	* Stored Volumes - Entire Dataset is stored on site and is
+	                   asynchronously backed up to S3
+	* Cached Volumes - Entire Dataset is stored on S3 and the most
+					   frequently accessed data is cached on site
+
+Gateway Virtual Tape Library
+
+
+
+

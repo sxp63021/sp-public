@@ -1,0 +1,17 @@
+Key Features of IAM
+
+Identity Access Management (IAM) offers the following features;
+
+a. Centralised control of your AWS account
+b. shared Access to your AWS account
+c. Granular Permissions
+d. Identity Federation (Including Active Directory, Facebook, Linkedin, etc)
+e. MFA (Multi Factor Authentication)
+f. Provide Temporary Access for users/devices and services where necessary
+g. Allows you to setup your own password rotation policy
+h. Integrates with many different AWS services
+i. Supports PCI DSS Compliance
+   Q. What is PCI DSS Compliance?
+   A. This is a compliance that is needed for Credit Card Payment system
+
+

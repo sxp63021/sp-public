@@ -1,0 +1,26 @@
+TITLE: S3 - SNOWBALL
+
+=================================
+Snowball is a petabyte-scale data transport solution that uses secure
+applicances to transfer large amounts of data into and out of AWS.
+
+Using Snowball addresses common challenges with large-scale data transfers
+including high network costs, long transfer times, and security concerns.
+
+Transferring data with Snowball is simple, fast, secure and can be as little
+as one-fifth the cost of high-speed internet.
+
+=================================
+
+=========
+Exam Tips
+=========
+
+* Understand what Snowball is
+
+	- Snowball can
+	- Import to S3
+	- Export from S3
+
+
+

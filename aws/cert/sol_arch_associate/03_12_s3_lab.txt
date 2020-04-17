@@ -1,0 +1,23 @@
+
+=========
+EXAM TIPS
+=========
+
+* Buckets are a universal namespace
+* Upload an object to S3 receive a HTTP 200 Code
+* S3, S3-IA, S3-IA (One Zone), Glacier
+
+* Control access to buckets using either a bucker ACL or
+  using Bucket Polices
+
+Understand how to get the best value out of S3
+
+1. S3 Standard
+2. S3-IA
+3. S3-Intelligent Tiering
+4. S3 One Zone - IA
+5. S3 Glacier
+6. S3 Glacier Deep Archive
+
+
+
