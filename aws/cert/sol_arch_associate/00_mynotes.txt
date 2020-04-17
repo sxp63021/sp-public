@@ -1,0 +1,74 @@
+
+Notes from 04/17/2020
+=====
+
+1. While doing the AWS course, i was trying to see if we can do C++
+   programs run in AWS? How to do that? What can i do?
+
+A. There is a C++ SDK released by AWS
+   Date of Release: 2015
+   Link of Website: https://aws.amazon.com/sdk-for-cpp/
+   Chk out on web : - Getting Started
+					- Developer Blog
+					- Developer Guide
+					- API Reference
+   Some of the Sample Stuff we can do from C++ using AWS SDK (samples from Blog)
+   - Developer Experience of the AWS SDK for C++ Now Simplified by CMake
+   - Cross-Platform Text-to-Speech for C++ with Amazon Polly
+   - Amazon S3 Encryption Client Now Available for C++ Developers
+   - Symmetric Encryption/Decryption in the AWS SDK for C++ with std::iostream
+   - AWS SDK for C++: Simplified Configuration and Initialization
+   - Using a Thread Pool with the AWS SDK for C++
+
+
+Q. any blogs on the internet experimenting on this front?
+A. I saw a post by Bartek from Poland
+   Link: https://www.bfilipek.com/2020/01/amazon-aws-cpp.html
+
+   Bartek's Blog in general talks about C++ 17, 20 features - checkit out
+
+Q. What did you understand from above info?
+A. What i understood from above info was, we can use C++ to programatically
+   use AWS API or AWS Services
+   This is made possible using AWS SDK for C++
+
+   I keep seeing some requiremens that we need to encrypt logs before putting them
+   in AWS S3. So the SDK helps to encrypt/decrypt logs and put them in S3.
+
+Q. Do you see any videos in youtube?
+A. Yes, i saw some videos in youtube
+   Example1:
+	User: rhymu8354
+	Link: https://www.youtube.com/watch?v=pYUi-L2O_Rc
+    This is #68 in my series of live (Twitch) coding streams, working on various 
+    projects in C++.
+  
+    This stream I started work on a library for interfacing with Amazon Web 
+    Services (AWS), beginning with the proper signing of AWS API calls.
+    Notebook page:  https://tinyurl.com/y9ursnt9
+
+
+   Example2:
+   User: CloudBedrock
+   Link: https://www.youtube.com/watch?v=TaWLaOfqoy8
+
+   This is a simple walk through of using the new AWS Lambda Runtime API with 
+   C++ which allows you to use the C++ programming language with Amazon AWS 
+   Lambda.
+
+   This walk through follows the AWS Blog Article available here: 
+   https://aws.amazon.com/blogs/compute/introducing-the-c-lambda-runtime/
+
+   This user was using Amazon Cloud9 IDE
+   https://aws.amazon.com/cloud9/
+
+   I did not see any other videos other than just this one in his channel
+
+Q. Some on quora was asking how C++ will help for a job in AWS?
+A. https://www.quora.com/As-a-C++-developer-how-hard-is-it-to-get-into-AWS-How-can-C++-experience-help-to-switch-career-to-AWS
+
+
+Q. Any reviews about amazon IDE Cloud9 cloud 9
+A. https://www.youtube.com/watch?v=J-8gszVB1_s
+   Video by GosuCoder
+
