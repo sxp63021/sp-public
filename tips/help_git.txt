@@ -1,0 +1,79 @@
+GIT commands for help
+
+From: https://www.atlassian.com/git/tutorials/atlassian-git-cheatsheet
+
+BASICS
+~~~~~~
+
+1. git init <directory>
+    Create empty Git repo in specified directory. Run with no
+    arguments to initialize the current directory as a git repository.
+    
+2. git clone <repo> 
+Clone repo located at <repo> onto local machine. Original repo can be
+located on the local filesystem or on a remote machine via HTTP or SSH
+
+3. git config user.name <name>
+Define author name to be used for all commits in current repo. Devs
+commonly use --global flag to set config options for current user.
+
+4. git add <directory>
+
+5. git commit -m "message"
+
+6. git status
+
+7. git log
+
+8. git diff
+
+
+UNDOING CHANGES
+~~~~~~~~~~~~~~~~
+
+1. git revert <commit>
+2. git reset <file>
+3. git clean -n
+
+Rewriting Git History
+~~~~~~~~~~~~~~~~~~~~~
+1. git commit --amend
+
+2. git rebase <base>
+
+3. git reflog
+
+GIT BRANCHES
+~~~~~~~~~~~~~
+1. git branch
+
+2. git checkout -b <branch>
+
+3. git merge <branch>
+
+REMOTE REPOSITORIES
+~~~~~~~~~~~~~~~~~~~
+1. git remote add <name> <url>
+
+2. git fetch <remte> <branch>
+
+3. git pull <remote>
+
+4. git push <remote> <branch>
+
+ADVANCED
+~~~~~~~~
+Scenario1 :
+===========
+I want to pull only certain directories from git, not everything from the repo
+
+a. mkdir <repo> && cd <repo>
+b. git init
+c. git remote add –f <url>
+d. git config core.sparsecheckout true
+e. echo some/dir/ >> .git/info/sparse-checkout
+f. echo another/sub/tree >> .git/info/sparse-checkout
+g. git pull origin master
+
+This will help to pull only specific directories rather than all the files
+
