@@ -77,3 +77,10 @@ g. git pull origin master
 
 This will help to pull only specific directories rather than all the files
 
+Using from Windows
+~~~~~~~~~~~~~~~~~~
+Good frontend GUI - sourcetree, tortoise git, GIT GUI
+When installing tortoise GIT, it asked me to install https://gitforwindows.org/
+After installing, right click in the folder you plan to clone the repo
+Product installation will ask you "Name" and "Email"
+
