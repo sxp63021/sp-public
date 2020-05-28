@@ -1,0 +1,30 @@
+TITLE: Security Groups Basics
+
+=================================
+
+=================================
+
+=========
+Exam Tips
+=========
+
+1. All Inbound traffic is blocked by default
+2. All Outbound traffic is allowed
+3. Changes to Security Groups take effect immediately
+4. You can have any number of EC2 instances within a security group
+5. You can have multiple security groups attached to EC2 Instances
+
+Security Groups are STATEFUL
+  - inbound rule will impact the outbound rule on same port
+    no need to add an explicit outbound rule
+  - If you create an inbout rule allowing traffic in, that traffic is
+    automatically allowed back out again
+  - You cannot block specific IP addresses using Security Groups, instead
+    use Network Access Control Lists
+
+  - You can specify allow rules, but not deny rules (this has to be done 
+    in VPC)
+
+
+
+

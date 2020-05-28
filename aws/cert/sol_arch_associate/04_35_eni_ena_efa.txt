@@ -1,0 +1,41 @@
+TITLE: ENI vs ENA vs EFA
+
+=================================
+ENI = Elastic Network Interface - esentially a virtual network card
+	  Low Budget, High Availability solution
+
+EN - Enhanced Networking. Uses single root I/O Virtualization (SR-IOV)
+     to provide high-performance networking capabilities on supported
+	 instance types
+	 - Provides higher bandwidth, higher packets per second (PPS_
+	 - lower inter-instance latencies
+	 - Use here you want good network performance
+	 - ENA can give upto 100 Gbps
+	 - EN VF (Virtual Function) can give upto 10 Gbps
+
+EFA - Elastic Fiber Adapter
+	  A network device that you can attach to your amazon EC2
+	  to accelerate High Performance Computing (HPC) and ML apps
+	  - EFA provides lower and most consistent latency, higher throughput
+	  - EFA can use OS-bypass. OS-bypass -bypass o/s kernel and communicate
+	    directly with EFA device. Lower latency.
+	    Currently supported on Linux only.
+
+=================================
+
+=========
+Exam Tips
+=========
+
+ENI
+	For all basic networking. Might need a separate management ntk to your
+	production ntf or separate logging ntk and you need to do this at low cost
+	Multiple ENIs for each network
+EN
+	For speeds from 10Gbps and 100 Gbps. Need reliable high throughput
+
+EFA
+	You need HPC and ML applications. Need OS-bypass, use this approach
+
+
+

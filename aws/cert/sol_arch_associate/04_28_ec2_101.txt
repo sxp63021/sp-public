@@ -1,0 +1,76 @@
+TITLE:  EC2 101
+
+=================================
+What is EC2?
+
+Amazon Elastic Compute Cloud (Amazon EC2) is a web service that provides
+resizable compute capacity in the cloud. Amazon EC2 reduces the time required
+to obtain and boot new server instances to minutes, allowing you to quickly
+scale capacity, both up and down, as your computing requirements change.
+
+=================================
+EC2 Pricing Models
+
+a. On Demand 	b. Reserved 	c. Spot 	d. Dedicated Hosts
+
+1. On Demand
+   Useful for users that want the low cost and flexibility of Amazon EC2
+   without any up-front payment or long-term commitment
+
+   Applications with short term, spiky, or unpredictable workloads that
+   cannot be interrupted
+
+   applications being developed or tested on Amazon EC2 for the first time
+
+2. Reserved
+   Reserved pricing is useful for Applications with steady state or predictable
+   usage
+
+   Applications that require reserved capacity
+
+   Users able to make upfront payments to reduce their total computing costs
+   even further
+
+3. Spot
+   Applications that have flexible start and end times
+   Applications that are only feasible at very low compute prices
+   Users with urgent computing needs for large amts of additional capacity
+
+4. Dedicated Hosts
+   Useful for regulatory requirements that may not support multi-tenant
+   virtualization
+   Great for licensing which does not support multi-tenancy or cloud deployments
+   Can be purchased On-Demand(hourly)
+   Can be purchased as a Reservation for upto 70% off the On-Demand price
+
+=================================
+EC2 Instance Types - Mnemonic
+F - For FPGA
+I - for IOPS
+G - for Graphics
+H - High Disk Throughput
+T - Cheap General Purpose (think T2 micro)
+D - For density
+R - For RAM
+M - Main choice for general purpose apps
+C - For Compute
+P - Graphics (think Pics)
+X - Extreme Memory
+Z - Extreme Memory And CPU
+A - Arm-based workloads
+U - Bare Metal
+=================================
+=================================
+
+=========
+Exam Tips
+=========
+
+* If the Spot instance is terminated by Amazon EC2, you will not be charged for
+  that particular hour. If you terminate it by yourself, you will be charged for
+  the full hour
+* 
+
+
+
+

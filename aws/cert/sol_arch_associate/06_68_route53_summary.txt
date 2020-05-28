@@ -1,0 +1,115 @@
+TITLE: 
+=================================
+
+=================================
+
+=========
+Exam Tips
+=========
+
+- You can buy domain names directly with AWS
+- It can take upto 3 days to register depending on the circumstances
+
+Simple Routing Policy
+~~~~~~~~~~~~~~~~~~~~~
+If you choose the simple routing policy you can only have one record with 
+multiple IP addresses. If you specify multiple values in a record, Route 53
+returns all values to the user in a random order.
+
+Health Check cannot be enabled on this Policy
+
+Weighted Routing Policy
+~~~~~~~~~~~~~~~~~~~~~~~
+- Allows you to split the traffic based on diff weights assigned
+
+- You can set health checks on individual record sets
+- If a record set fails a health check, it will be removed from Route53
+  until it passes the health check
+- You can set SNS notifications to alert you if a health check is failed
+
+Latency Routing Policy
+~~~~~~~~~~~~~~~~~~~~~~
+Allows you to route your traffic based on the lowest network latency for
+your end user (i.e which region will give them the fastest response time).
+
+To use latency-based routing, you create a latency resource record set for the
+Amazon EC2 (or ELB) resource in each region that hosts your website.
+When Amazon Route 53 receives a query for your site, it selects the latency
+resource record set for the region that gives the user the lowest latency.
+Route 53 then responds with the value associated with that resource record set
+
+Failover Routing Policy
+~~~~~~~~~~~~~~~~~~~~~~~
+Active Passive Sites.
+If an Active Site is not reachable, Passive side will be promoted to Active state
+
+Primary and Secondary are other words to refer to this Policy
+
+Geolocation Routing Policy
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+Geolocation routing lets you choose where your traffic will be sent based on
+the geographic location of your users (i.e the location from which DNS queries
+originate). 
+
+For example, you might want all queries from Europe to be routed
+to a fleet of EC2 instances that are specifically configured for your European
+customers. 
+
+These servers may have the local language of your European customers
+and all prices are displayed in Euros
+
+Geoproximity Routing Policy (Traffic Flow Only)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Geoproximity routing lets Amazon Route 53 route traffic to your resources based
+on the geographic location of your users and your resources.
+
+You can also optionally choose to route more traffic or less to a given resource
+by specifying a value, known as a bias. A bias exmpands or shrinks the size of
+the geographic region from which traffic is routed to a resource.
+
+To use geoproximity routing, you must use Route53 traffic flow.
+
+Multivalue Answer
+~~~~~~~~~~~~~~~~~
+In Simple Routing, we see that "health check" cannot be enabled.
+Mutlivalue Answer helps in this contexted, each entry must be added seperately
+
+Multivalue answer routing lets you configure Amazon Route 53 to return multiple
+values, such as IP addresses for your web servers, in response to DNS queries.
+
+You can specify multiple values for almost any record, but multivalue answer
+routing also lets you check the health of each resource, so Route53 returns
+only values for healthy resources.
+
+This is similar to simple routing, however it allows you to put health
+checks on each record set.
+
+
+Exam Tips
+~~~~~~~~~
+- ELBs do not have pre-defined IPv4 addresses, you resolve to them using a
+  DNS name.
+- Understand the difference between an Alias Record and a CNAME
+- Given the choice, always choose an Alias Record over a CNAME
+
+Common DNS Types
+- SOA Records
+- NS Records
+- A Records
+- CNAMES
+- MX Records
+
+Routing Policies
+- Simple Routing
+- Weighted Routing
+- Latency-based Routing
+- Failover Routing
+- Geolocation Routing
+- Geoproximity Routing (Traffic Flow Only)
+- Multivalue Answer Routing
+
+Health Checks
+- You can set health checks on individual record sets
+- If a record set fails a health check it will be removed from Route53
+  until it passess the health check
+- You can set SNS notification to alert you if a health check is failed

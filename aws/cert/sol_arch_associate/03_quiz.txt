@@ -1,0 +1,135 @@
+
+04/17/2020 Friday
+Snapshot of Questions (total 37 Q)
+
+1. What is an additional way to secure the AWS accounts of both the root account and
+   new users alike?
+2. Which of the following is not a component of IAM?
+3. Which statement best describes IAM?
+4. In what language are policy documents written?
+5. What is the default level of access a newly created IAM User is granted?
+6. Which of the following is not a feature of IAM?
+7. You have a client who is considering a move to AWS. In establishing a new
+   account, what is the first thing the company should do?
+8. A new employee has just started work, and it is your job to give her
+   administrator access to the AWS console. You have given her a user name, an
+   access key ID, a secret access key, and you have generated a password for her.
+   She is now able to log in to the AWS console, but she is unable to interact with
+   any AWS services. What should you do next?
+9. What level of access does the "root" account have?
+10. You are a solutions architect working for a large engineering company that are
+   moving from a legacy infrastructure to AWS. You have configured the company's
+   first AWS account and you have set up IAM. Your company is based in Andorra, but
+   there will be a small subsidiary operating out of South Korea, so that office
+   will need its own AWS environment. Which of the following statements is true?
+11. You are a security administrator working for a hotel chain. You have a new
+   member of staff who has started as a systems administrator, and she will need
+   full access to the AWS console. You have created the user account and generated
+   the access key id and the secret access key. You have moved this user into the
+   group where the other administrators are, and you have provided the new user
+   with their secret access key and their access key id. However, when she tries to
+   log in to the AWS console, she cannot. Why might that be?
+12. Every user you create in the IAM systems starts with ________.
+13. A __________ is a document that provides a formal statement of one or more
+   permissions.
+14. You have created a new AWS account for your company, and you have also
+   configured multi-factor authentication on the root account. You are about to
+   create your new users. What strategy should you consider in order to ensure that
+   there is good security on this account.
+15. You have been asked to advise on a scaling concern. The client has an elegant
+   solution that works well. As the information base grows they use CloudFormation
+   to spin up another stack made up of an S3 bucket and supporting compute
+   instances. The trigger for creating a new stack is when the PUT rate approaches
+   100 PUTs per second. The problem is that as the business grows that number of
+   buckets is growing into the hundreds and will soon be in the thousands. You have
+   been asked what can be done to reduce the number of buckets without changing the
+   basic architecture.
+16. You have uploaded a file to S3. Which HTTP code would indicate that the upload
+   was successful?
+17. What is Amazon Glacier?
+18. You work for a health insurance company that amasses a large number of patients'
+   health records. Each record will be used once when assessing a customer, and
+   will then need to be securely stored for a period of 7 years. In some rare
+   cases, you may need to retrieve this data within 24 hours of a claim being
+   lodged. Given these requirements, which type of AWS storage would deliver the
+   least expensive solution?
+19. The difference between S3 and EBS is that EBS is object-based whereas S3 is
+   block-based.
+20. What is the availability of S3 – OneZone-IA?
+21. One of your users is trying to upload a 7.5GB file to S3. However, they keep
+   getting the following error message: "Your proposed upload exceeds the maximum
+   allowed object size.". What solution to this problem does AWS recommend?
+22. You run a popular photo-sharing website that depends on S3 to store content.
+   Paid advertising is your primary source of revenue. However, you have discovered
+   that other websites are linking directly to the images in your buckets, not to
+   the HTML pages that serve the content. This means that people are not seeing the
+   paid advertising, and you are paying AWS unnecessarily to serve content directly
+   from S3. How might you resolve this issue?
+23. AWS S3 has four different URLs styles that it can be used to access content in
+   S3.  The Virtual Hosted Style URL, the Path-Style Access URL, the Static web
+   site URL, and the Legacy Global Endpoint URL.  Which of these represents a
+   correct formatting of the  Virtual Hosted Style URL  style
+24. You work for a major news network in Europe. They have just released a new
+   mobile app that allows users to post their photos of newsworthy events in
+   real-time, which are then reviewed by your editors before being copied to your
+   website and made public. Your organization expects this app to grow very
+   quickly, essentially doubling its user base each month. The app uses S3 to store
+   the images, and you are expecting sudden and sizable increases in traffic to S3
+   when a major news event takes place (as users will be uploading large amounts of
+   content.) You need to keep your storage costs to a minimum, and it does not
+   matter if some objects are lost. With these factors in mind, which storage media
+   should you use to keep costs as low as possible?
+25. How many S3 buckets can I have per account by default?
+26. You work for a busy digital marketing company who currently store their data
+   on-premise. They are looking to migrate to AWS S3 and to store their data in
+   buckets. Each bucket will be named after their individual customers, followed by
+   a random series of letters and numbers. Once written to S3 the data is rarely
+   changed, as it has already been sent to the end customer for them to use as they
+   see fit. However, on some occasions, customers may need certain files updated
+   quickly, and this may be for work that has been done months or even years ago.
+   You would need to be able to access this data immediately to make changes in
+   that case, but you must also keep your storage costs extremely low. The data is
+   not easily reproducible if lost. Which S3 storage class should you choose to
+   minimize costs and to maximize retrieval times?
+27. What is the availability of objects stored in S3?
+28. S3 has what consistency model for PUTS of new objects?
+29. What does S3 stand for?
+30. You are a solutions architect who works with a large digital media company. The
+   company has decided that they want to operate within the Japanese region and
+   they need a bucket called "testbucket" set up immediately to test their web
+   application on. You log in to the AWS console and try to create this bucket in
+   the Japanese region however you are told that the bucket name is already taken.
+31. What should you do to resolve this?
+32. What is AWS Storage Gateway?
+
+I need improvement in the following questions
+
+What you should review
+1. When you create a new user, that user ________.
+2. Using SAML (Security Assertion Markup Language 2.0), you can give your federated
+users single sign-on (SSO) access to the AWS Management Console.
+3. Power User Access allows ________.
+4. You run a meme creation website where users can create memes and then download
+them for use on their own sites. The original images are stored in S3 and each
+meme's metadata in DynamoDB. You need to decide upon a low-cost storage option
+for the memes, themselves. If a meme object is unavailable or lost, a Lambda
+function will automatically recreate it using the original file from S3 and the
+metadata from DynamoDB. Which storage solution should you use to store the
+non-critical, easily reproducible memes in the most cost-effective way?
+5. S3 has eventual consistency for which HTTP Methods?
+6. What is the minimum file size that I can store on S3?
+
+Question 28:
+AWS S3 has four different URLs styles that it can be used to access content in 
+S3.  The Virtual Hosted Style URL, the Path-Style Access URL, the Static web 
+site URL, and the Legacy Global Endpoint URL.  Which of these represents a 
+correct formatting of the  Virtual Hosted Style URL  style
+
+Solution: Virtual style puts your bucket name 1st, s3 2nd, and the region 3rd. 
+Path style puts s3 1st and your bucket as a sub domain. Legacy Global endpoint 
+has no region. S3 static hosting can be your own domain or your bucket name 
+1st, s3-website 2nd, followed by the region. AWS are in the process of phasing 
+out Path style, and support for Legacy Global Endpoint format is limited and 
+discouraged. However it is still useful to be able to recognize them should 
+they show up in logs. 
+https://docs.aws.amazon.com/AmazonS3/latest/dev/VirtualHosting.html

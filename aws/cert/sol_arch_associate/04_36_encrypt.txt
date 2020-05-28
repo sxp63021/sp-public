@@ -1,0 +1,27 @@
+TITLE: Encrypted Root Device Volumes and Snapshots - Lab
+
+=================================
+
+=================================
+
+=========
+Exam Tips
+=========
+
+1. Snapshots of encrypted volumes are encrypted automatically
+2. Vols restored from encrypted snapshots are encrypted automatically
+3. You can share snapshots, but only if they are unencrypted
+4. These snapshots can be shared with other AWS accounts or made public
+5. You can now encrypt root device volumes upon creation of the EC2 instance
+
+If your EC2 has unencrypted volume to start with, how to encrypt it
+
+a. Create a Snapshot of the unencrypted root device volume
+b. Create a copy of the Snapshot and select the encrypt option
+c. Create an AMI from the encrypted Snapshot
+d. Use that AMI to launch new encrypted instances
+
+
+
+
+

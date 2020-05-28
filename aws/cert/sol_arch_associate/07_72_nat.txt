@@ -1,0 +1,38 @@
+TITLE: NAT Instances and NAT Gateways - LAB
+
+NAT = Network Address Translation
+=================================
+
+NAT Instance - individual EC2 instances that just help to do the NATting
+
+NAT Gateway is a highly available instance, that allow private instance
+to communicate with the public network out there.
+
+
+=================================
+
+=========
+Exam Tips
+=========
+* When creating NAT instance, Disable Source/Destination Check on the Instance
+* NAT instances must be in a public subnet
+* There must be a route out of the private subnet to the NAT instance, in order
+  for this to work.
+* The amount of traffic that NAT instances can support depends on the instance
+  size. If you are bottlenecking, increase the instance size.
+* You can create high availability using Autoscaling Groups, multiple subnets
+  in different AZs, and a script to automate failover.
+* Behind a Security Group
+
+* Redundant inside the Availability Zone
+* Preferred by the enterprise
+* Starts at 5Gbps and scaled currently to 45 Gbps
+* No need to patch
+* Not associated with security groups
+* Automatically assigned a public ip address
+* Remember to update your route tables
+* No need to disable Source/Destination Checks
+
+
+
+

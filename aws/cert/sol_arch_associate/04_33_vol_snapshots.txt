@@ -1,0 +1,38 @@
+TITLE: EBS Volumes and Snapshots - Lab
+=================================
+
+When we delete a EC2 instance, the EBS volumes that were added
+needed not be deleted if it is not clicked originally
+
+We need to go into volumes and delete the volume afterwards
+
+We can take a snapshot of the AMI once it is up and running
+We can move this snapshot into another region where we want it to run
+
+If there is a EBS volume, location of EBS volume will be in the same
+location as the EC2 instance.
+
+=================================
+
+=========
+Exam Tips
+=========
+
+1. Volumes exist on EBS. Think of EBS as a virtual hard disk
+2. Snapshots exist on S3. Think of snapshots as a photograph of the disk
+3. Snapshots are point in time copies of Volumes
+4. Snapshots are incremental - this means that only the blocks that have 
+   changed since your last snapshot are moved to S3.
+5. If it is the first snapshot, it will take sometime to create it
+
+6. To create a snapshot for Amazon EBS volumes that serve as root devices, 
+   you should stop the instance before taking the snapshot.
+7. However you can take a snap while the instance is running
+8. You can create AMI's from Snapshots
+9. You can change EBS volume sizes on the fly, including changing the size and
+   storage type.
+
+10. To move an EC2 volume from one AZ to another, take a snapshot of it,
+    create an AMI from the snapshot and then use the AMI to launch the EC2
+    instance in a new AZ
+

@@ -1,0 +1,20 @@
+TITLE: Creating first RDS Instance - LAB
+
+=================================
+
+=================================
+
+=========
+Exam Tips
+=========
+- RDS runs on virtual machines
+- You cannot login to these operating systems running RDS
+- Patching of RDS O/S and DB is Amazon's responsibility
+- RDS is NOT Serverless
+- Aurora Serverless IS Serverless
+
+
+
+
+
+

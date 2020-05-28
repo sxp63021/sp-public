@@ -1,0 +1,52 @@
+TITLE: Lets Get Our Hands Dirty with EC2 - Part 1
+
+=================================
+Trying to launch Web Server in EC2
+
+- Set the region where you want your EC2
+Step 1: Choose an Amazon Machine Image (AMI)
+Step 2: Choose an Instance Type
+        General Purpose, or 
+Step 3: Configure Instance Details
+		Number of Instances: 1 -> Launch into Auto Scaling Group
+									Order scaling will be covered in HA class
+		Purchasing Option: Request Spot Instances
+		Network:			 VPC ->
+		Subnet:
+		Auto-assign Public IP:
+
+		Placement group:
+		Capacity Reservation: we can reserve capacity
+		IAM Role
+		Shutdown Behavior: -> what do we want to do when we shutdown 
+		Enable Termination Protection: for this run, we will enable the termination prot
+		Monitoring:
+		Tenancy: "Shared - Run a shared hardware instance"
+
+Step 4: Add Storage
+		Default size is 8 Gb, General Purpose SSD, IOPS of 100
+		This is the root volume
+		Root device can only launch on SSD or Magnetic device
+
+		This is a virtual disk in the cloud
+
+Step 5: Add Tags
+		Key Value pairs as to who own this EC2, what is it used for, etc
+
+Step 6: Configure Security Group
+
+        Port configuration details are mentioned here
+
+- Virtual Server, ssh on port 22, HTTP goes over port 80
+- create a new security group
+  WebDMZ (De Milatrized Zone)
+
+
+=================================
+
+=========
+Exam Tips
+=========
+
+
+

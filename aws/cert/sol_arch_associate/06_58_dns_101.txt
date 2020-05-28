@@ -1,0 +1,98 @@
+TITLE: DNS 101
+
+=================================
+Route 53? Why is it named "Route 53".
+
+First interstate was "Route 66" - from one side of country to another
+
+Port 53 is used for DNS in the Operating system.
+
+Mixing both these, it is called "Route 53".
+
+
+=================================
+Top Level domains
+
+.com
+.edu
+.gov
+.co.uk
+.com.au
+
+
+Top Level = .com, .edu, .gov, .uk
+Second Level domain name = .com in ".com.au"
+
+controlled by IANA (Internet Assigned Numbers Authority)
+
+Popular Domain registrars include
+Amazon, GoDaddy.com, 123-reg.co.uk, etc
+
+=================================
+NS stands for Name Server Records
+
+	They are used by Top Level domain Servers to direct traffic to the Content
+	DNS server which contains the authoritative DNS records
+
+What's an A record?
+An "A" record is the fundamental type of DNS record. the "A" in A record stands 
+for "Address". the A record is used by a computer to translate the name of the
+domain to an IP address.
+
+What is TTL?
+The length that a DNS record is cached on either the Resolving Server or the
+users own local PC is equal to Time to Live (TTL) in seconds. Lower TTL, faster
+change to DNS records take to propogate throughout the internet
+
+What is CName?
+A Canonical Name(CName) can be used to resolve one domain name to another. For
+example, you may have a mobile website with the domain name http://m.acloudguru.com
+that is used for people browing the site from mobile.
+You also want the name http://mobile.acloudguru.com to resolve to this same
+address
+
+
+What is Alias REcords
+Alias records are used to map resource record sets in your hosted zone to
+Elastic Load Balancers, CloudFront distributions, or S3 buckets that are
+configured as websites.
+
+Alias records work like a CNAME record in that you can mape one DNS name
+(www.example.com) to another 'target' DNS name (elb1234.elb.amazonaws.com)
+
+Key diff between "Alias Records" and CNAME.
+CNAMe cannot be used for naked domain names.
+You can't havbe a CNAME for http://acloud.guru, it must be either
+an A record or an Alias.
+
+=================================
+
+=========
+Exam Tips
+=========
+- ELBs do not have pre-defined IPv4 addresses; you resolve to them using a
+  DNS name
+- Understand the difference between an Alias Record and a CNAME
+- Give the choice, always choose an Alias Record over a CNAME
+
+Common DNS Types
+~~~~~~~~~~~~~~~~~
+
+- SOA Records
+- NS Records
+- A Records
+- CNAMES
+- MX Records
+- PTR Records
+
+
+Routing Policies
+~~~~~~~~~~~~~~~~
+- Simple Routing
+- Weighted Routing
+- Latency-based Routing
+- Failover Routing
+- Geolocation Routing
+- Geoproximity Routing (Traffic Flow Only)
+- Multivalue Answer Routing
+

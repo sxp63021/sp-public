@@ -1,0 +1,27 @@
+TITLE: Bastions or Jump Servers
+=================================
+What is a Bastion (Jumpserver) host?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+A bastion host is a special purpose computer on a network specifically
+designed and configured to withstand attacks. The computer generally
+host a single application, for example a proxy server, and all other
+services are remove or limited to reduce the thread to the computer.
+
+It is hardened in this manner primarily due to its location and purpose,
+which is either on the outside of a firewall or in a DMZ (Demiliarized zone)
+and usually involves access from untrusted networks or computers.
+
+=================================
+
+=========
+Exam Tips
+=========
+* A NAT Gateway or NAT instance is used to provide internet traffic to EC2
+  instances in a private subnets
+* A Bastion/jumpserver is used to securely administer EC2 instances (using SSH
+  or RDP). Bastions are called Jump boxes in Australia
+* You cannot use NAT Gateway as a Bastion host
+
+
+

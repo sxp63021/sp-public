@@ -1,0 +1,16 @@
+TITLE: Cloud Watch (cloudwatch)
+
+=================================
+What is Cloud Watch?
+
+Amazon Cloud Watch is a monitoring service to monitor your AWS
+resources, as well as the application that you run on AWS
+
+=================================
+
+=========
+Exam Tips
+=========
+
+
+

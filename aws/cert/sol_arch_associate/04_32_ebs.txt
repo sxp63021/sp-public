@@ -1,0 +1,60 @@
+TITLE:  EBS - Elastic Block Store
+
+=================================
+What is EBS?
+Amazon Elastic Block Store (EBS) provides persistent block storage
+volumes for use with Amazon EC2 instances in the AWS cloud. Each Amazon EBS
+volume is automatically replicated within its Availability Zone to protect you
+from component failure, offering high availability and durability.
+
+EBS is a virtual hard drive in the cloud
+
+=================================
+EBS Volumes
+
+5 Different Types of EBS Storage;
+	- General Purpose (SSD)
+	- Provisioned IOPS (SSD)
+	- Throughput Optimised Hard Disk Drive
+	- Cold HDD
+	- EBS Magnetic
+=================================
+- General Purpose (SSD)
+	Balances price and performance for a wide variety of transactional workload
+	Most Work Loads
+	API Name: gp2
+	Max IOPS: 160,000
+
+- Provisioned IOPS SSD
+	Highest Performance SSD vol designed for mission-critical appl
+	Databases
+	API Nmae: io1
+	Max IOPS: 64,000
+
+- Throughput Optimized HDD
+	Low cost HDD volume designed for frequently accessed, throughput-intensive
+     workloads
+	Big Data and Data Warehouses
+	API Name: st1
+	Max IOPS: 500
+
+- Cold HDD
+	Lowest cost HDD volume desinged for less frequently accessed workloads
+	File Servers
+	API Name: sc1
+	Max IOPS: 250
+	
+- EBS Magnetic
+	Previous Generation HDD
+	Workloads where data is infrequently accessed
+	API Name; Standard
+	Max IOPS: 40 - 200
+
+=================================
+
+=========
+Exam Tips
+=========
+
+
+

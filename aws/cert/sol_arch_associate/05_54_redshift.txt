@@ -1,0 +1,87 @@
+TITLE: Redshift
+
+=================================
+What is Redshift
+~~~~~~~~~~~~~~~~
+
+Amazon Redshift is a fast and powerful, fully managed, petabyte scale data
+warehouse service in the cloud. Customers can start small for just $0.25 per
+hour with no commitments or upfront costs and scale to a petabyte per year,
+less than a tenth of most other data warehousing solutuons.
+
+=================================
+OLTP Vs OLAP
+
+OLAP transaction Example:
+Net Profit for EMEA and Pacific for the Digital Radio Product.
+Pulls in large numbers of records
+
+Sum of Radios Sold in EMEA
+Sum of Radios Sold in Pacific
+Unit Cost of Radio in each region
+Sales price of each radio
+Sales price - unit cost
+
+Data Warehousing database use different type of architecture both from a db
+perspective and infrastructure layer.
+
+=================================
+Redshift Configuration
+~~~~~~~~~~~~~~~~~~~~~~
+Redshift can be configured as follows
+- Single Node (160Gb)
+- Multi Node
+	- Leader Node (manages client connections and receives queries)
+	- Compute Node (store data and perform queries and computations). 
+	  Upto 128 Compute Nodes
+
+=================================
+Advanced Compression
+~~~~~~~~~~~~~~~~~~~~
+Columnar data stores can be compressed much more than row-based data stores
+because similar data is stored sequentially on disk. Amazon Redshift employs
+multiple compression techniques and can oftern achieve significant compression
+relative to traditional relational data stores. In addition, Amazon Redshift
+doesn't require indexes or materialized views, and so uses less space than 
+traditional relational database systems. When loading data into an empty table,
+Amazon Redshift automatically samples your data and selects the most appropriate
+compression scheme.
+
+=================================
+Massively Parallel Processing (MPP)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Amazon Redshift automatically distributes data and query load across all nodes.
+Amazon Redshift makes it easy to add nodes to your data warehouse and enables
+you to maintain fast query performance as your data warehouse grows.
+
+=================================
+Backups
+~~~~~~~~~
+
+- Enabled by default with a 1 day retention period
+- Max retention period is 35 days
+- Redshift always attempts to maintain at least three copies of your data
+  (the original and replica on the compute nodes and a backup in Amazon S3)
+- Redshift can also async replicate your snapshots to S3 in another region
+  for disaster recovery.
+
+=================================
+Redshift is priced as follows
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+=================================
+
+=========
+Exam Tips
+=========
+- Redshift is used for business intelligence
+
+Backups
+- Enabled by default with a 1 day retention period
+- Maximum retention period is 35 days
+- Redshift always attempts to maintain at least three copies of your data
+  (the original, replica on the compute nodes, and a backup in Amazon S3)
+- Redshift can also asynchronously replicate your snapshot to S3 in another
+  region for disaster recovery
+
+

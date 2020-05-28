@@ -1,0 +1,113 @@
+TITLE: Databases 101
+
+=================================
+Relational databases on AWS;
+
+1. SQL Server (microsoft)
+2. Oracle
+3. MySQL Server
+4. PostgreSQL
+5. Aurora (amazon db sol)
+6. MariaDB (used in financial industry)
+
+=================================
+Multi-AZ vs ReadReplicas
+
+RDS has two key features:
+	- Multi-AZ - For Disaster Recovery
+		- set your db in replicated fashion
+		- if one machine goes down, AWS will use the dns name to divert
+		  requests to another machine
+	- Read Replicas - For Performance
+		- if one machine goes down, user will need to change dns name to
+		  point to the other DB
+		- in one setup, if DB is mainly for reading, each EC2 can point to diff
+		  DB so improve performance
+
+=================================
+Non Relational Databases
+
+* Collection 		= Table (Relational DB)
+* Document   		= Row (Relational DB)
+* Key Value Pair 	= Fields (Relational DB)
+
+=================================
+What is Data Warehousing?
+
+Used for business intelligence. Tools like Cognos, Jaspersoft, SQL Server
+Reporting Services, Oracle Hyperion, SAP NetWeaver.
+
+Used to pull in very large and complex data sets. Usually used by management
+to do queries on data (such as current performance Vs. targets etc)
+
+=================================
+OLTP Vs OLAP
+
+Online Transaction Processing (OLTP) differs from Online Analytics Processing
+(OLAP) in terms of the types of querues you will run.
+
+OLTP Example:
+Order # - 2120121
+Pulls up a row of adata such as Name, Date, Address to Deliver to, Delivery Status, etc
+
+=================================
+OLTP Vs OLAP (Contd..)
+
+OLAP Transaction Example:
+Net Profit for EMEA and Pacific for the Digital Radio PRoduct.
+Pulls in large number of records
+
+- Sum of Radios Sold in EMEA
+- Sum of Radios Sold in Pacific
+- Unit Cost of Radio in each Region
+- Sales price of each radio
+Sales price - unit cost
+
+Data Warehousing databases use different type of architecture both from a database
+perspective and infrastructure layer.
+
+Amazon's Datawarehouse solution is Called Redshift
+
+=================================
+What is ElastiCache?
+
+ElastiCache is a web service that makes it easy to deploy, operate, and savel and
+in-memory cache in the cloud. The service improves the performance of the web
+applications by allowing you to retrieve information from fast, managed,
+in-memory caches, instead of relying entirely on slower disk-based databases
+
+ElastiCache supports two open-source in-memory caching engines:
+- Memchached
+- Redis
+
+One example, 
+ 
+If a lot of customers are always asking for the top 10 sold items,
+this can be cached, so we can return these values quickly rather
+than recompute every time.
+
+Second example:
+Web page like finance.yahoo always displays the top sold stock by volume
+Something like this can be in cache, so need not recompute everytime.
+
+=================================
+
+=========
+Exam Tips
+=========
+
+Relational databases (RDS) avbl on AWS:
+
+1. SQL Server (microsoft)
+2. Oracle
+3. MySQL Server
+4. PostgreSQL
+5. Aurora (amazon db sol)
+6. MariaDB (used in financial industry)
+
+DynamcoDB (NoSQL)
+Red Shift OLAP (Business Intelligence or Data Warehouse)
+
+ElastiCache helps to speed up performance of existing databases (frequent
+identical queries).
+

@@ -1,0 +1,39 @@
+TITLE:  AWS WAF
+
+=================================
+At its most basic level, AWS WAF allows 3 different behaviours:
+
+1. Allow all requests except the ones you specify
+2. Block all requests except the ones you specify
+3. Count the requests that match the properties you specify
+
+=================================
+WAF Protection
+
+Extra protection against web attacks using conditions you specify.
+You can define conditions by using characteristics of web request such as:
+
+* IP addresses that requests originate from
+* Country that requests originate from
+* Values in request headers
+* Strings that appear in requests, either specific strings or string that match
+  regular expression (regex) patterns.
+* Length of requests
+* Presence of SQL code that is likely to be malicious (known as SQL injection)
+* Presence of a script that is likely to be malicious (known as cross-site scripting)
+
+=================================
+
+=========
+Exam Tips
+=========
+
+In the exam you will be given different scenarios and you will be asked how to
+block malicious IP addresses
+
+* Use AWS WAF
+* Use Network ACLs - We will cover this in more detail in the VPC section
+  of the course
+
+
+

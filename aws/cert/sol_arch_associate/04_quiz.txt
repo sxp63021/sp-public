@@ -1,0 +1,25 @@
+What you know
+Can Spread Placement Groups be deployed across multiple Availability Zones?
+When creating a new security group, all inbound traffic is allowed by default.
+To help you manage your Amazon EC2 instances, you can assign your own metadata in the form of ________.
+In order to enable encryption at rest using EC2 and Elastic Block Store, you must ________.
+You need to know both the private IP address and public IP address of your EC2 instance. You should ________.
+Amazon's EBS volumes are ________.
+If an Amazon EBS volume is an additional partition (not the root volume), can I detach it without stopping the instance?
+You can add multiple volumes to an EC2 instance and then create your own RAID 5/RAID 10/RAID 0 configurations using those volumes.
+Spread Placement Groups can be deployed across multiple Availability Zones
+You have developed a new web application in the US-West-2 Region that requires six Amazon Elastic Compute Cloud (EC2) instances to be running at all times. US-West-2 comprises three Availability Zones (us-west-2a, us-west-2b, and us-west-2c). You need 100 percent fault tolerance: should any single Availability Zone in us-west-2 become unavailable, the application must continue to run. How would you make sure 6 servers are ALWAYS available? NOTE: each answer has 2 possible deployment configurations. Select the answer that gives TWO satisfactory solutions to this scenario.
+The use of a cluster placement group is ideal _______.
+EBS Snapshots are backed up to S3 in what manner?
+Can I delete a snapshot of an EBS Volume that is used as the root device of a registered AMI?
+Which AWS CLI command should I use to create a snapshot of an EBS volume?
+I can change the permissions of a role, even if that role is already assigned to an existing EC2 instance, and these changes will take effect immediately.
+To retrieve instance metadata or user data you will need to use the following IP Address:
+Will an Amazon EBS root volume persist independently from the life of the terminated EC2 instance to which it was previously attached? In other words, if I terminated an EC2 instance, would that EBS root volume persist?
+I can use the AWS Console to add a role to an EC2 instance after that instance has been created and powered-up.
+What you should review
+Which of the following features only relate to Spread Placement Groups?
+Can I move a reserved instance from one region to another?
+Individual instances are provisioned ________.
+Is it possible to perform actions on an existing Amazon EBS Snapshot?
+Can you attach an EBS volume to more than one EC2 instance at the same time?
