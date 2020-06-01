@@ -30,6 +30,11 @@ commonly use --global flag to set config options for current user.
 
 UNDOING CHANGES
 ~~~~~~~~~~~~~~~~
+Scenario: You made some changes on your local branch and
+          commited to the local branch.
+	      You don't want to push these changes on local
+          branch, you can do the following 3 steps to revert back
+          This will show a log message in "git log"
 
 1. git revert <commit>
 2. git reset <file>
@@ -46,10 +51,19 @@ Rewriting Git History
 GIT BRANCHES
 ~~~~~~~~~~~~~
 1. git branch
-
 2. git checkout -b <branch>
-
 3. git merge <branch>
+
+Scenario: Branch B is made from A, changes in A need to be merged with Branch b
+~~~~~~~~~
+1. git checkout branch_a
+2. git pull -> to make sure all changes are fetched
+3. git checkout branch_b
+4. git merge branch_a -> this will bring all changes into branch_b
+5. if any files are merged, git status will show ur branch is ahead of branch on repo
+6. git push -> if there are any changes that are merged, they need to be
+               pushed to the gitrepo
+7. git status -> this will show that the local branch has same changes as in the repo
 
 REMOTE REPOSITORIES
 ~~~~~~~~~~~~~~~~~~~
@@ -83,4 +97,13 @@ Good frontend GUI - sourcetree, tortoise git, GIT GUI
 When installing tortoise GIT, it asked me to install https://gitforwindows.org/
 After installing, right click in the folder you plan to clone the repo
 Product installation will ask you "Name" and "Email"
+
+$git checkout <filename> -> if you want to delete your changes and want original file
+$git log -> to see what are all the changes
+$git status -> to see if my changes are pushed, any commits, anything need to be pulled
+$git checkout <branch_name> -> if you want to switch branches
+#git fetch -> only downloads data from remote repo, but does not
+              integrate any of these changes.
+$git pull -> to pull the changes from repo into local directory
+$git push -> to push local changes into repo
 
