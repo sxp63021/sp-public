@@ -1,0 +1,11 @@
+https://www.toptal.com/big-data/developing-in-the-cloud-with-docker-and-aws
+
+Setting up a development environment in AWS using the approach mentioned by 
+Michele Sciabarra.
+
+One can change the approach for the services they want to expose.
+
+I did not want the vnc port to be exposed. So decided to
+ssh tunnel and expose that particular port via ssh.
+
+
