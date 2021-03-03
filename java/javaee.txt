@@ -1,0 +1,36 @@
+
+Q. What is new in Java EE 8
+- Java Servlet 4.0 API with HTTP/2 support
+- Enhanced JSON support uncluding a new JSON binding API
+- A new REST Reactive Client API
+- Asyncronous CDI Events
+- A new portable Serurity API
+- Server-Sent Events support (Client and Server-side)
+- support for the cloud
+- HTML5
+
+Q. What is Java EE used for?
+Java EE is a structured application with a seperate client, business and Enterprise layers.
+It is mostly used to develop APIs for Desktop Applications like antivirus software, game, etc
+It is mainly used for developing web applications
+
+Q. What is Java EE technologies?
+A. Java EE is actually a collection of technologies and APIs for the
+Java platform designed to support "Enterprise" Applications which can
+generally be clased as large-scale, distributed, transactional and
+highly-available applications designed to support mission-critical
+business requirements
+
+Q. What is the difference between Java and Java EE?
+A. Java EE = Enterprise Edition. Java platform (EE) differs from the
+   Java SE = Standard Edition platform, in that it adds libraries which
+   provide functionality to deploy fault-tolerant, distributed, milti-tier
+   Java software, based largely on modular components running on 
+   application server.
+
+
+Q. Which versions of Java EE are used?
+A. JAva EE 8 (40%), Java EE 7 (60%) is being used
+
+
+

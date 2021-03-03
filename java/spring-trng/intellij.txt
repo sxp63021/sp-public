@@ -1,0 +1,24 @@
+Steps to Install IntelliJ IDE
+
+Intellij is by Jetbrains
+
+System Requirements
+- 2 Gb free RAM
+- any modern CPU
+- 2.5 Gb + 1Gb for caches
+- MS 64 bito
+
+Download Standalone version
+from: https://www.jetbrains.com/idea/download/#section=mac
+
+Before installing IntelliJ
+- Install Java JDK
+- Add Java JDK in the Path variable
+
+You can download the Community Edition
+
+- When installing, choose the following Installation Options
+a. 64-bit launcher
+b. Add "Open Folder as Project"
+c. Update PATH variable (restart needed)
+

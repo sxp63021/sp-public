@@ -1,0 +1,122 @@
+
+Day 1: 03/01/2021 Monday
+
+Q. What is Spring Framework and why it is used?
+A. the Spring Framework provides a comprehensive prog
+   and configuration model for modern Java-based enterprise
+   applications - on any kind of deployment platform
+
+Q. Why is Spring framework so popular?
+A. The Spring Framework became prominent in the market dur to basic
+   Spring framework features, which are its modularity. That is, it can be
+   divided into different modules, each serving their own functionality
+
+Q. What is the main principle for Spring Framework?
+A. Spring Framework is based on two design principles u
+   - Dependency Injection
+   - Aspect Oriented Programming
+
+Q. What is Spring Framework and how it works?
+A. At its core, Spring framework is really just a dependency injection
+   container, with a couple of convenience layers (think: database access
+   proxies, aspect-oriented prog, RPC, a web MVC framework) added on top.
+   It helps you build Java application faster and more conveniently.
+
+
+
+
+Q. Why is Spring framework developed?
+A. Spring is the most popular application development framework for enterprise Java
+   Spring Framework targets to make J2EE development easier to use and promotes 
+   good proramming practices by enabling POJO - based programming model
+   POJO - Plain Old Java Object
+
+Spring is a wrapper around java
+manage the objects inside the wrapper
+design a wrapped
+these objects can be injected whenever 
+required
+
+Dependency injection is invented for this
+
+it was leveraged 
+
+integration modules, etc ... incorportated as a direct capability
+or indirect capability
+How applications are running in legacy struts framework
+Spring frameworks and makes the dependency injection possible in legacy frameworkds
+
+It now becomes a powerful framework, captive framework
+
+Reactive programming with micro services in mind.
+i
+frp Spring 2.5, meta
+Spring 3 onwards, java configuration based
+
+Spring framework was primarily developed as independent dependency injection
+
+Website: spring.io
+If you want to learn spring, there are lot of examples on hte website
+depending on the domain or project, many modules/applications are there
+
+axccording to our need, we have a solution in Spring Framework.
+Spring is modular by design.
+Looking at Sprint Framework - current version is 5.3.4
+We can see what features are added in
+mostly concentrated in "Web Reactive" and Languages like "Kotlin"
+
+This is brief intro about Spring boot
+We can write test cases easily "setter injection"
+Platform transaction manager
+it can be able to to provide distributive
+if we are using JPA for undertlying transaction
+
+If you use Hibernated transaction manager, JPA transaction manager.
+depending on what you are using.
+Platform transaction manager 
+
+Legacy projects are integrated to Spring Framework, because of two 
+features, to and to get powerful
+CApability and
+Spring simplifies over other frameworks
+Q. Why it is easily integrated?
+
+assume Struts Application
+In Struts or 
+
+Using Edraw Max
+Assume Action Classes, Service Classes, DAO
+--------------------------------------------------
+Business Model
+
+	Action  ----> Services  ---->     DAO
+	Classes <----           <-----
+--------------------------------------------------
+
+Object creation is very costly, if object creation is
+not created properly. There will be a problem, heap 
+exceptions, 
+
+In this scenarion
+Spring Framework, Spring is given Wrapper Class, that is a delegator class
+
+no delegating proxy, add spring delegator here.
+This spring delegator will read all the application specific classes from
+memory and register into the application context
+
+--------------------------------------------------
+Business Model
+
+      Application Context
+	  ^             |                 |
+      |             V                 V
+	Action  ----> Services  ---->     DAO
+	Classes <----           <-----
+--------------------------------------------------
+
+
+Create a legacy Spring project
+Spring Legacy Project
+
+
+
