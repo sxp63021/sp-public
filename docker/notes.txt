@@ -17,6 +17,15 @@ Docker Install commands
 7. docker images -> to see what images are available on your own system
 8. sudo apt install docker-compose
 
+05/13/2021
+----------
+Docker was started with Linux in mind
+To support Docker on Windows, Virtualization must be supported
+docker creates a VM on Hyper-V 
+hypervisors require hardware virtualization to be enabled
+1. Some PCs have Hyper-V in bios that can be enabled
+2. If PC does not have support for hardware virtualization, one needs to install Docker Toolbox(https://github.com/docker/toolbox/releases) which uses "Oracle Virtual Box" to spin up VMs that will host docker containers instead of Hyper-V
+
 04/03/2020
     Looking for novice things to do on docker
 
