@@ -38,7 +38,7 @@ public class AppTest
      String command = "ls examples.desktop";
      String userName = "test";
      String password = "test123";
-     String connectionIP = "192.168.86.154";
+     String connectionIP = "192.168.2.10";
      SSHManager instance = new SSHManager(userName, password, connectionIP, "");
      String errorMessage = instance.connect();
 

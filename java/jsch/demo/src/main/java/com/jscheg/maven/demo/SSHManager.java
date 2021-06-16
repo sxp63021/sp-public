@@ -28,7 +28,7 @@ public class SSHManager
 	   }
 	   catch(JSchException jschX)
 	   {
-	      System.out.println("Satish in catch when setKnownHosts: " + jschX);
+	      System.out.println("in catch when setKnownHosts: " + jschX);
 		   logError(jschX.getMessage());
 	   }
 	
@@ -70,7 +70,7 @@ public class SSHManager
 	
 	   try
 	   {
-		   System.out.println("Satish in connect: ");
+		   System.out.println("in connect: ");
 		   
 	      sesConnection = jschSSHChannel.getSession(strUserName, 
 	          strConnectionIP, intConnectionPort);
@@ -85,7 +85,7 @@ public class SSHManager
 	   }
 	   catch(JSchException jschX)
 	   {
-		   System.out.println("Satish in catch when trying to connect: " + jschX);
+		   System.out.println("in catch when trying to connect: " + jschX);
 	      errorMessage = jschX.getMessage();
 	   }
 	

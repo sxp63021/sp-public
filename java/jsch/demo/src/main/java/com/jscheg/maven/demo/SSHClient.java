@@ -68,7 +68,7 @@ public class SSHClient {
 		try {
 		      jschSSHChannel.setKnownHosts(knownhostfname);
 		} catch(JSchException ex) {
-		      LOGGER.error("Satish in catch when setting known host files: " + ex);
+		      LOGGER.error("in catch when setting known host files: " + ex);
 			  LOGGER.error(ex.getMessage());
 			  return null;
 		}
@@ -157,9 +157,9 @@ public class SSHClient {
 		System.out.println("Hello World");
 		
 
-		String ip = "192.168.86.154";
+		String ip = "192.168.2.10";
 		
-		final InputStream is = SSHClient.runACommand(ip, "satishp", "wrong", "uname -a");
+		final InputStream is = SSHClient.runACommand(ip, "user1", "wrong", "uname -a");
 		
 		BufferedReader br = new BufferedReader(new InputStreamReader(is));
 		String line = null;
