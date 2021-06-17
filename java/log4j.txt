@@ -1,0 +1,10 @@
+
+Sometimes we can see issue of same message being printed over and over
+in the log file. (also called as repetitive log message)
+
+One way to take care of this
+https://stackoverflow.com/questions/9132193/log4j-standard-way-to-prevent-repetitive-log-messages
+
+Create a class LogConsolidated, have a public static method log()
+this method will aggregate all the message and print as per configured logic
+
