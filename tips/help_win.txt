@@ -1,0 +1,7 @@
+
+winmerge: When comparing git repos, i see DOS line enters and unix line enters
+          are showing up as differences
+	      Winmerge -> Edit -> Options
+          Compare->General "Whitespace -> Select 'Ignore Change'"
+          Compare->General "Ignore Carriage return differences"
+

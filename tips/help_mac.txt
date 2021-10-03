@@ -1,0 +1,7 @@
+
+mac: capture portion of screen
+     Shift + Command + 4
+     Take the screenshot
+     It will mostly be saved on desktop
+
+

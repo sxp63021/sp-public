@@ -1,0 +1,6 @@
+
+diff: $diff -rq --no-dereference dir1 dir2
+      the above command is not ignoring whitespace
+diff: $diff -rqw --no-dereference dir1 dir2
+
+
