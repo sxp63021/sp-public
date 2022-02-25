@@ -1,0 +1,63 @@
+
+Looking for IDE - Spyder or Pycharm or Eclipse
+
+PDF: https://clauidius-graebner.com/files/abm-python-course-dt/intro-spyder.pdf
+
+Interview Questions on Spyder IDE
+medium.com/edureka/spyder-ide-2a91caac4e46
+
+Q1. What is Python Spyder IDE>?
+A1. Soyder is an open source cross-platform IDE
+    Spyder IDE is completely written in Pything
+    It is designed by Scientists, for scientists, data analysts, enggineers
+
+Q2. What are the features of Spyder?
+A2. Customizable Syntax highlighting
+    Availability of breakpoints
+    Interactive execution which allows you to run line,file, cell
+    Run configuration for working dir selections, command line options
+	 current/dedicated/external console, etc
+	Can clear variables automatically (or enter debugging)
+	Navigation through cells, functions, blocks, etc can be achieved through
+	 outline explorer
+	Realtime code introspecition
+	Automatic colon insertion after if, while, etc
+	Supports all IPython Magic commands
+	Inline display for graphics produced using Matplotlib
+
+Q3. Installation of Spyder IDE>?
+A3. It comes as part of Anaconda installation
+	File -> New File
+	Projects -> New Project (to create a new project)
+
+	To run any fukem, you can select the "Run" option and click it
+
+	Code Cells
+	 #%%	-> Standard cell seperator
+	 # %% 	-> Standard cell seperator, if files edited with Eclipse
+	 #<codecell>	-> IPythonm notebook cell seperator
+
+	-> Variable Explorer
+	-> File Explorer
+	-> 
+
+https://www.spyder-ide.org/blog/STX-interivew/
+
+Youtube Video: 
+
+1. How to setup a new Python Project
+   https://www.youtube.com/watch?v=GeYis4ZuluY
+
+2. Python Packaging from Init to Deploy
+	https://www.youtube.com/watch?v=4fzAMdLKC5k
+
+3. PyCharm
+   Creating and Running your first python project
+	https://www.jetbrains.com/help/pycharm/creating-and-running-your-first-python-project.html
+
+4. Packaging Your Python App into Standalone Executables (PyInstaller) - Expense Tracker
+	https://www.youtube.com/watch?v=s-lKHA9o_pY
+
+
+
+

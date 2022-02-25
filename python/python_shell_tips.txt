@@ -1,0 +1,25 @@
+#Tips when using Python shell
+
+* When using Python shell, know where is the Python executable is?
+  Use the os module
+>>> import os
+>>> import sys
+>>> os.path.dirname(sys.executable)
+
+* Python shell, know the current directory and change dir
+>>> import os
+>>> os.getcwd()
+
+  Change directory
+>>> os.chdir("/tmp/")
+>>> os.getcwd()
+
+Ref: https://stackoverflow.com/questions/8248397/how-to-know-change-current-directory-in-python-shell
+
+* To install selenium when python is installed in Windows
+  - Locate where Python is installed on Windows
+  - From Command propt, go to that location
+  - Go to Scripts/ directory where Python is installed
+  - pip install selenium
+
+
