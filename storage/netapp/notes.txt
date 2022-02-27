@@ -1,0 +1,42 @@
+
+Q. What type of storage is NetApp?
+A. The NetApp storage system is a hardware- and software-based data storage and 
+   retrieval system. It responds to network requests from clients and fulfills 
+   them by writing data to or retrieving data from its disk array.
+
+Q. NetApp on prem how does it work?
+A. Internally data is stored on disk arrays
+A. Storage is in the network, so systems can have a private LAN
+   or routes/VLAN if only one network card so systems accessing the
+   storage are fast in writing or accessing the data
+
+Q. Why is netapp so good?
+A. NetApp delivers both cloud data services to your data center and enterprise
+   storage capabilities to the public cloud. NetApp gives you a unified 
+   software-defined experience to manage your data across the world's buggest
+   public cloudes, private clouds, and on premises
+
+Q. NetApp NAS or SAN?
+A. NetApp is SAN storage vendor.
+   Storage Area Networks (SAN) used by enterprises for business-critical application
+    that need high throughput and low latency
+    SAN deployments leverate all-flash storage for high performance, low latency, low cost
+    compared to spinning disks
+
+   Since all data is in a central shared storage, SAN allow methodologies and tools for
+    - security
+    - data protection and
+    - disaster recovery
+
+   SAN is block-based storage
+
+   SAN are designed to remove single points of failure
+
+Q. What file system is used in NetApp?
+A. While most large-storage systems are implemented with commodity comp with OS as
+   Windows Server, VxWorks, or tuned Linix.
+
+   Netapp uses ONTAP based hardware appliances, proprietary Data ONTAP OS with
+   WAFL file system
+
+

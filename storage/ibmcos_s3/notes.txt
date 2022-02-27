@@ -1,0 +1,28 @@
+
+S3 protocol was invented by AWS, this is used
+for object storage in the cloud
+
+IBM has a S3 storage, that can be deployed on prem
+
+* IBM COS S3 can be mounted as local file systems using FUSE and performance
+  will be almost same as nativeBatch sender/receiver
+
+* Mount S3 bucket as drive
+  s3fs to mount the bucket as storage
+
+* Use AWS CLI S3 tool to connect to the IBM S3 Storage
+
+* Can we give SFTP access to IBM S3 bucket?
+  No SFTP support to IBM S3.
+  Alternate ways via Gateways
+
+* Can we connect Kafka Topic to S3 Bucket to create files?
+  AWS, we can do the following
+  You can connect Kafka to S3 using the following steps: 
+  Step 1: Installing Kafka on your Workstation. 
+  Step 2: Installing the Amazon S3 Sink Connector for Kafka. 
+  Step 3: Starting the Kafka, Zookeeper & Connect Server.
+
+  for IBM S3, need to find steps
+
+
