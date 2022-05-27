@@ -1,0 +1,31 @@
+Jira Best Practices
+
+Requirements Jira/s
+ - any connectivity details for development activities
+ - server ip/username/password/access
+ - firewall requests
+ - Best to have a separate document for Requirements
+ - Review and rework efforts is best tracked with separate Jiras
+ - Use checklists team put together
+Architecture or Design Jira/s
+ - Use any templates - good place to start
+ - Review and rework efforts is best tracked with separate Jiras
+ - Use checklists team put together
+ICD/TDR Document Jira's
+ - Review and rework efforts is best tracked with separate Jiras
+ - Use checklists team put together
+Documenting Test Plan Jira's
+ - Functional Testing
+ - Integration Testing
+ - Performance Testing
+ - User Acceptance Testing
+Development Efforts related Jira/s
+Environment Prep and Validation Jira/s
+ - Containerize modules and run in argo+K8
+Integration efforts Jira/s
+Integration Testing Jira/s
+Functional Testing Jira/s
+Performance Testing Jira/s
+User Acceptance Testing Jira/s
+ - upstream separate Jira/s
+ - downstream separate Jira/s
