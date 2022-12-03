@@ -1,0 +1,47 @@
+
+Kubernetes
+Aug 14th Pluralsight free weekend
+https://app.pluralsight.com/library/courses/kubernetes-getting-started/table-of-contents
+docker container - through multiple images
+base image, on top of it, you want ot install an app
+container runtime needs to understand
+provide that particular interface, memory, network, disk, do your replication
+Docker is famous for runtime
+Variosu other - containerd, other than docker, cri-o
+
+h/w - read about containerd, cri-o, docker
+
+Declarative Model and Desired Date
+===================================
+- give api server that declares and end stated.
+   this end state is desired state
+- Declaration is in yaml
+	apiVersion:
+	kind: Deployment
+	metadata:
+		name: test
+	spec:
+
+Ex: we want "web" replicas 3, kubernetes is looking for 3 pods
+    observed state looks only for 2 pods.
+	Match observed state to desired state
+
+Mighty Pod
+==========
+What is Pod: Shared execution environment
+				maybe ip, 
+	Every pod is execution environment
+
+Unit of Scaling in Kubernetes is pods
+
+
+Question
+========
+Dpes Kubernetes allow Vertical Scaling?
+
+A. Not for existing pods, only for new pods
+
+
+
+
+`

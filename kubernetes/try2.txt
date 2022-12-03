@@ -1,0 +1,11 @@
+
+Very good site talking about Kubernetes
+- https://www.tutorialworks.com/learn-kubernetes-online/
+	- Good video in cartoon on this website explaining about Kubernetes
+	- https://youtu.be/4ht22ReBjno
+
+	- Focus on learning Kubernetes as Administrator or a developer
+	- Get access to a Kubernetes cluster
+	- Work on your Linux skills
+
+
