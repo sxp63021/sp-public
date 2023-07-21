@@ -1,0 +1,58 @@
+Git Workflow
+============
+
+For simple workflows (single feature at a time)
+Have three branches
+- dev (development phase)
+- uat (user acceptance testing branch)
+- master/main (this is where the code is tagged and released)
+
+First time
+----------
+1. git clone <url> <optional-new-dir/same dir as repo will be created>
+2. git checkout dev (checkout into develop branch)
+
+If you have a repo and are trying to get back to make changes
+-------------------------------------------------------------
+1. cd <where repo located>
+2. git status (make sure no local commits, if needed stash them)
+3. git remote update origin --prune
+4. git checkout master (switch to master and update it)
+5. git pull origin master (make sure no merge conflicts)
+6. git checkout develop (switch to develop and update it)
+7. git pull origin develop (git pull also works)
+
+You are ready to make code changes (assume u did above step)
+-----------------------------------
+1. cd <where repo located>
+2. git checkout dev (if it is a diff feature branch, co to that branch)
+3. git add <file or files>
+4. git mv or rm
+5. git status - make sure everything is added or changed
+6. git commit -a
+
+Ready with all changes and want to push changes
+-----------------------------------------------
+1. make sure all changes are commited "git status"
+2. git remote update --prune
+3. git pull origin dev (2 and 3, will chk if any new commit on dev branch since it was last ck, merge if necessar)
+4. git push origin dev (git push will also work)
+5. Use git UI to create a review package
+
+Ready to release
+----------------
+1. git checkout dev
+2. git push origin develop (git push will also work)
+3. git log master..dev (verify changes that will be merged into main or uat)4. git checkout master
+5. git merge --no-ff dev (merge dev branch into master)
+6. do any build or testing before tagging
+7. git tag -a vA.B.C (A is major, B is minor, C is micro build#)
+8. git push -tags origin master (push master to repo)
+9. git checkout dev
+10. git merge --no-ff mastere
+11. git push origin dev (merge master back into develop)
+
+
+
+
+
