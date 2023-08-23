@@ -10,7 +10,9 @@ RUN apt-get update && apt-get install -y procps && apt-get clean
 WORKDIR /app
 COPY br.config /app/.
 COPY br.ksh /app/.
-COPY test1 /app/.
-COPY test2 /app/.
+RUN mkdir /app/test1
+RUN mkdir /app/test2
+COPY test1 /app/test1
+COPY test2 /app/test2
 #RUN yarn install --production
-CMD ["/bin/ksh", "/app/br.ksh"]
+#CMD ["/bin/ksh", "/app/br.ksh"]
