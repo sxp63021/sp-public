@@ -1,0 +1,11 @@
+
+Simple shell script that depicts it is doing a sftp download
+
+Name: br
+Desc: Batch Receiver, which run will download files from server
+      and save it into a local directory
+      Instead of connecting to a different server, we will move
+      files from path1 to path2
+
+
+           

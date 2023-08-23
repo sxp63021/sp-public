@@ -1,0 +1,19 @@
+# syntax=docker/dockerfile:1
+
+#FROM node:18-alpine
+##FROM centos:latest
+##RUN yum update -y && yum install -y ksh
+FROM alpine:latest
+RUN apk update && apk add ksh && apk clean
+#USER root
+#RUN apt-get update && apt-get install procps -y
+RUN apk update && apk add procps
+#USER nobody
+
+WORKDIR /app
+COPY br.config /app/.
+COPY br.ksh /app/.
+COPY test1 /app/.
+COPY test2 /app/.
+#RUN yarn install --production
+CMD ["/bin/ksh", "/app/br.ksh"]

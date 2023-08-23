@@ -42,6 +42,8 @@ hypervisors require hardware virtualization to be enabled
      -OR-
     docker rmi -> delete images you no longer need
 
+17. to stop a docker container
+    docker stop <container_name_or_id>
 
 
 --
@@ -50,3 +52,6 @@ $sudo groupadd docker
 $ sudo usermod -aG docker ${USER}
 logout and log back in
 $docker run hello-world
+
+URL: https://docs.docker.com/get-started/02_our_app/ - Containerize an application
+
