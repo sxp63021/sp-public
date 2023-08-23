@@ -55,3 +55,14 @@ $docker run hello-world
 
 URL: https://docs.docker.com/get-started/02_our_app/ - Containerize an application
 
+
+08/23/2023
+----- docker push -----
+https://www.cloudbees.com/blog/using-docker-push-to-publish-images-to-dockerhub
+01. docker build -t sxp63021/br .
+02. docker login -u sxp63021 (enter hub.docker.com password)
+03. docker push sxp63021/br
+04. docker tag sxp63021/br:latest sxp63021/br:v1.0.0
+05. docker push sxp63021/br:v1.0.0
+
+
