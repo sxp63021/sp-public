@@ -64,5 +64,5 @@ https://www.cloudbees.com/blog/using-docker-push-to-publish-images-to-dockerhub
 03. docker push sxp63021/br
 04. docker tag sxp63021/br:latest sxp63021/br:v1.0.0
 05. docker push sxp63021/br:v1.0.0
-
+06. git inspect br (to see details about an image)
 

@@ -52,7 +52,17 @@ Ready to release
 10. git merge --no-ff mastere
 11. git push origin dev (merge master back into develop)
 
-
+FAQ
+----
+1. to change git editor to vim 
+   $git config --global core.editor "vim"
+2. to rename or move files and commit
+   $git mv <options> oldfname newfname
+   $git commit -m "oldfname renamed to newfname"
+   -OR-
+   $mv file1.txt file2.txt
+   $git add file2.txt
+   $git rm file1.txt
 
 
 
