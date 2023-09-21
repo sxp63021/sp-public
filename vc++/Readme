@@ -1,0 +1,43 @@
+
+
+VC++ related stuff
+===================
+
+Visual Studio 2017 
+
+Installation
+==============
+Link: https://devblogs.microsoft.com/cppblog/getting-started-with-visual-studio-for-c-and-cpp-development/
+
+Community Edition is free for personal use.
+
+Install the following components
+---------------------------------
+- select "Desktop development with C++"
+- Optional: VC++2017 toolset
+		Just-in-Time debugger
+		C++ profiling tools
+		Windows 10 SDK
+		Visual C++ tools for CMake
+
+
+Building the Application
+========================
+Open "Visual Studio 2017" from Windows Menu
+1. File -> New Project -> with "VC ++ select", choose "Console App"
+2. Give a name for the project
+3. By Default it stores the files in C:\Users\<id>\source\repos
+
+After you write some code or use the same code that is generated in IDE
+  std::cout << "Hello World!\n"
+
+Go to "Build"
+
+
+Tutorials
+==========
+
+Youtube
+1. KTS Training Videos
+   VC++ Tutorial 1 - https://www.youtube.com/watch?v=EppfeDgCcTc
+2. 
