@@ -1,0 +1,14 @@
+
+
+10/04/2023
+
+Minikube cheatsheet
+$ minikube start
+$ minikube dashboard -> connect via web
+$ minikube version -> to check if it is installed
+$ mini
+10/01/2023
+* Installed minikube following the instructions at
+  https://www.linuxtechi.com/how-to-install-minikube-on-ubuntu/
+
+

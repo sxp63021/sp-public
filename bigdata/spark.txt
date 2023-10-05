@@ -1,0 +1,35 @@
+
+spark-shell
+===========
+val path="/home/test/data/input/inputfile.ver1.json"
+
+APPROACH1
+~~~~~~~~~
+val inputread = spark.read.option("multiline", "true").json(path)
+inputread.printSchema
+
+APPROACH2
+~~~~~~~~~
+//Read Json Schema and Create Schema_Json
+val schema_json = spark.read.json("/home/test/data/input/inputfile.ver1.json").schema.json
+// add the schema
+val newSchema=DataType.fromJson(schema_json).asInstanceOf[StructType]
+
+// read the json files based on schema
+val df = spark.read.schema(newSchema).json(path)
+
+// refer https://stackoverflow.com/questions/39355149/how-to-read-json-with-schema-in-spark-dataframes-spark-sql/51717217
+
+inputread.show
+inputread.count()
+inputread.select("location") -- error
+inputread.select("classmark").distinct.count()
+inputread.show(truncate = false) - show whole values in the column, rather than short form of the column (default is 20 chars)
+// https://sparkbyexamples.com/spark/spark-show-full-column-content-dataframe
+-- this is showung everything in two columns, looks like we need to read as per schema
+
+HDFS
+=====
+hdfs dfs -get /home/test/dirname .
+
+
