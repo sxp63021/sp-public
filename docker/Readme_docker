@@ -66,3 +66,13 @@ https://www.cloudbees.com/blog/using-docker-push-to-publish-images-to-dockerhub
 05. docker push sxp63021/br:v1.0.0
 06. git inspect br (to see details about an image)
 
+11/01/2023
+-----------
+* Install docker on windows
+* Start "Docker Desktop" to make sure it is up and running
+* CMD -> docker version (on windows there are two parts, one is client
+         another is the Docker Desktop)
+* CMD -> docker image ls -> to see the list of images on the current machine
+* CMD -> docker save -o C:\temp\proj1_v1.tar proj1:v1 - if there is an image proj1:v1 in the existing repo
+  - on the target machine, do "$docker load -I proj_v1.tar"
+

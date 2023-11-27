@@ -1,0 +1,10 @@
+
+Oracle Virtual Box has a capability to run Windows Virtual machine
+
+11/27/2023
+- if you have an image and trying to make a copy of that image
+  
+  cmd>cd "C:\Program Files\Oracle\VirtualBox\"
+  cmd>VBoxManage clonevm "Name_of_Original_VM" --name "Name_of_New_VM" --register
+
+
