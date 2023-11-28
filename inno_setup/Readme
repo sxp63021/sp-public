@@ -1,0 +1,15 @@
+
+11/28/2023
+
+Inno setup stable build can be found at https://jrsoftware.org/isdl.php#stable
+
+Inno setup helps to package files into an installation file
+- this helps to install files
+- this also helps in uninstall
+
+While using this application to create a sample binary
+- MyAppName, this needs to be the folder where the binaries are placed
+  this somehow gets into the variable {app} that is used in the script
+- if you want to put any files in C:\ProgramData, use {commonappdata}
+- if you want to just create a directory, we can use the [Dirs] section
+
