@@ -1,0 +1,20 @@
+
+Using the following yml file for running mysql as a docker
+
+--- start of file.yaml ---
+# to run this yml script
+# docker-compse -f <file.yml> up -d (to run in daemon mode)
+version: '3.8'
+
+services:
+    some-mysql:
+        image: mysql:latest
+        ports:
+          - 3306:3306
+        environment:
+          MYSQL_ROOT_PASSWORD: my-secret-pw
+          MYSQL_DATABASE: mydb1
+          MYSQL_USER: user1
+          MYSQL_PASSWORD: pass1
+
+--- stop of file.yaml ---

@@ -76,3 +76,27 @@ https://www.cloudbees.com/blog/using-docker-push-to-publish-images-to-dockerhub
 * CMD -> docker save -o C:\temp\proj1_v1.tar proj1:v1 - if there is an image proj1:v1 in the existing repo
   - on the target machine, do "$docker load -I proj_v1.tar"
 
+Use docker-compose to start/stop a docker image using yml file
+$docker-compose -f <file.yml> up -d (start in daemon mode)
+$docker-compose -f <file.yml> down
+
+
+11/29/2023
+-----------
+running mysql docker
+$docker run --name some-mysql -e MYSQL_ROOT_PASSWORD=my-secret-pw -d mysql:latest
+ 3 things, docker pull, docker create, docker start
+$docker ps -> see what images are running
+$docker container ls -> to see a list of containers
+$docker container ls -a -> This shows the old containers that have run and stopped now
+$docker stop some-mysql -> to stop the container
+$docker start some-mysql -> to restart the stopped container
+
+$docker exec -it <container_name_or_id> /bin/bash
+$docker hostory mysql:latest
+  -> we can see how the image is build, base image, ports that are exposed
+
+To create a DB, springboot has a suggestion
+url: https://spring.io/guides/gs/accessing-data-mysql/
+1. Start a docker image to run mysql
+2. connect 

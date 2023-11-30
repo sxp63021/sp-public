@@ -10,6 +10,20 @@ Navin Reddy
 Github: https://github.com/navinreddy20/Spring-Boot/tree/master/bootjpa/src/main
 Youtube: https://www.youtube.com/playlist?list=PLsyeobzWxl7qednPdXyD2yd502artL7Kz
 
+11/30/2023
+-----------
+was trying a mysql jdbc connection to springboot application
+missing dependency in pom.xml to mysql-connector-j
+had to add, got error "dependency version is missing"
+actual fix is to add version, so we know which version we need to use
+only from Spring 3, not in Spring 2
+~~~~
+<dependency>
+    <groupId>com.mysql</groupId>
+    <artifactId>mysql-connector-j</artifactId>
+    <scope>runtime</scope>
+</dependency>
+~~~~
 
 
 
