@@ -25,5 +25,11 @@ only from Spring 3, not in Spring 2
 </dependency>
 ~~~~
 
+12/06/2023
+------------
+While writing spring code with JPA
+Used the annotation @PostUpdate and see that the function is getting invoked but
+value in the table is not getting updated or getting changed
+I had to use the annotation @PreUpdate, so the value persists in db
 
 
