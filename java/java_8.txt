@@ -1,0 +1,81 @@
+
+Ref: https://www.javaguides.net/2018/10/java-main-method-interview-questions-with-answers.html
+
+Q. Why the main() method is public static?
+A. main() method is static in Java, so the JVM can directly invoke it without instantiating the class’s object.
+
+Q. Can we overload the main() method in Java?
+A. Yes, We can overload the main() method. A Java class can have any number of main() methods. But to run the 
+   java class, the class should have a main() method with signature as public static void main(String[] args).
+
+Q. Can we declare the main() method as private or protected or with no access modifier?
+A. No, the main() method must be public. You can’t define the main() method as private or protected or with 
+   no access modifier. This is because to make the main() method accessible to JVM. 
+
+Q. Can we run define Java Class without the main() method?
+A. No, We cannot define a class without the main() method starting from Java 7. In the previous release of Java, 
+   we can have Static Initializers as an alternative:
+
+Q. Can we make the main final in Java?
+A. Yes, you can make the main() method final
+
+--
+Q. JDK vs JVM vs JRE
+A. 
+    JDK (Java Development Kit): JDK is a software development kit that includes tools for developing, debugging, 
+    and monitoring Java applications, along with the Java Runtime Environment (JRE).
+
+    JVM (Java Virtual Machine): JVM is an abstract computing machine that executes Java bytecode, allowing Java 
+    programs to run on various platforms by interpreting and translating the bytecode into machine code.
+
+    JRE (Java Runtime Environment): JRE is a runtime environment that provides the necessary libraries and 
+    components for running Java applications, including the JVM.
+
+Q. Metods in java for time?
+A. java.time.*.now() to get the current time
+   LocalDate
+   LocalTime
+   LocalDateTime
+
+Q. What is a default method in Java
+   Before Java8, in interfaces, we can only declare functions we could not provide implementation
+   After Java8, we can declare and define the function in an interface, we append the keyword "default"
+   Example:
+   public interface MyInterface {
+    // Regular method declaration (without implementation)
+    void regularMethod();
+
+    // Default method with implementation
+    default void defaultMethod() {
+        System.out.println("Default implementation of defaultMethod()");
+    }
+   }
+
+Q. What are the classes in Java implementing List interface?
+A. Classes like ArrayList, LinkedList, Vector, Stack implement the List Interface
+   ArrayList has an index
+   LinkedList does not have an index, each element is linked to the other
+    - two types of linked lists, singly and doubly
+   Stack has FILO
+   Vector 
+
+   In C++ STL, Vector, Stack are concrete classes, rather than inheriting the List Interface
+   C++ abstract classes are like interfaces in Java
+   C++ evolved from C so in the designing these are best to be implemented as concrete classes
+   Java was designed from ground up, interfaces play a major role, hence this approach
+
+Q. What is Array?
+A. Array is a collection of elements, that are stored in a continuous memory location
+   Containing elements of the same data type
+
+
+Springboot
+-----------
+Q. What is the annotation in Springboot?
+A. @SpringBootApplication
+
+Q. What are the annotations that makeup @SpringBootApplication?
+A. @Configuration : This annotation indicates that the class has @Bean definition methods. ...
+   @ComponentScan : This annotation tells Spring where to scan for components. ...
+   @EnableAutoConfiguration : This annotation enables Spring Boot's automatic configuration mechanism.
+
