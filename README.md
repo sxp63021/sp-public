@@ -1,4 +1,4 @@
-# cautious-babu 1
+# cautious-babu
 
 * Created an online account sxp63021 on github
 * On github, i created cautious-babu repository
