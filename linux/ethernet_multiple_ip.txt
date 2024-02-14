@@ -1,0 +1,50 @@
+
+
+Simulate a scenario
+-------------------
+* Multiple IP addressess assign on same interface
+* Multiple linux VMs running on the same host machine
+* Connecting to IP1, should forward to VM1
+
+1. Take a linux machine
+1.5 assign multiple ips on the ethernet interface
+   $sudo ip addr add <IP1>/<CIDR> dev <interface> 
+   $sudo ip addr add 192.168.1.152/255.255.255.0 dev eth1
+   $sudo ip addr add 192.168.1.153/255.255.255.0 dev eth1
+   
+2. Install docker on this machine
+3. Create a ubuntu docker image, using the following content in the Dockerfile
+   FROM ubuntu:latest
+   RUN apt-get update &&  apt-get install -y openssh-server
+   RUN mkdir /var/run/sshd
+   RUN echo 'root:redhat123' | chpasswd
+   RUN sed -i 's/#PermitRootLogin prohibit-password/PermitRootLogin yes/' /etc/ssh/sshd_config
+   EXPOSE 22
+   # Start ssh server
+   CMD ["/usr/sbin/sshd", "-D"]
+4. Build the image "docker build -t ssh_on_docker ."
+5. Run the image "docker run --dit --name ssh_docker1 -p 2222:22 ssh_on_docker
+6. Run the image "docker run --dit --name ssh_docker2 -p 2223:22 ssh_on_docker
+
+7. on the windows/linux machine where ssh client is present
+   $ create a .ssh/config file
+   Host <IP1>
+    HostName <IP1>
+    Port <host_port1>
+   Host <IP2>
+    HostName <IP2>
+    Port <host_port2>
+----
+   Host 192.168.1.152
+    HostName 192.168.1.152
+    Port 2222
+   Host 192.168.1.153
+    HostName 192.168.1.153
+    Port 2223
+
+8. From the linux/windows client, connect using
+   make sure you can ping 192.168.1.152, and .153 before connecting
+   $ssh 192.168.1.152, this will cause the connection to go to ssh_docker1 via port 2222
+   $ssh 192.168.1.153, this will cause the connection to go to ssh_docker2 via port 2223
+
+
