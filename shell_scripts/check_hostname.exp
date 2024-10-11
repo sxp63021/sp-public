@@ -1,0 +1,16 @@
+#to run from windows which has cygwin installed in default in c:\cygwin64\bin and
+# cygwin added to Windows PATH variable
+#usage cmd>expect check_hostname.exp abc - failure case
+#usage cmd>expect check_hostname.exe <actualhostname>  - success case
+
+set hostname [lindex $argv 0]
+set hostname_output [exec /usr/bin/hostname]
+
+if {$hostname_output == $hostname} {
+	puts "Hostname matches: $hostname_output"
+	exit 0
+} else {
+	puts "Hostname did not match: $hostname_output"
+	exit 1
+}
+
