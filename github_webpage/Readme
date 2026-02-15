@@ -1,0 +1,22 @@
+
+Looking at ways to make a webpage on github
+all these will be static pages
+
+1. GitHub Profile README
+   - create a repo with same name as account name
+     - place a README.md this will be displayed as webpage
+   - You don't have to manage a domain or a complex build process
+   - Most use GitHub Profile README Generators
+     - example one by Aravind Binu - https://github.com/rahuldkjain/github-profile-readme-generator
+
+2. GitHub Pages + Jekyll
+   - Write your content in simple Markdown, GitHubs internal engine (Jekyll)
+     turns it into professionally looking website
+
+3. Modern Choice: Astro or Next.js + GitHub Actions
+   - its faster and more modern that Jekyll. Developers build site locally
+     using React or Vue and use GitHub Actions to automatically deploy the site
+     to GitHub pages when they push the code
+   - Many users Fork a popular portfolio template like al-folio and swap
+     out the text for their own
+
