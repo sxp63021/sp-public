@@ -1,0 +1,42 @@
+
+02/15/2026
+for accessing aws from command line
+
+1. Create AWS IAM access  keys for CLI use
+   a. Login to console.aws.amazon.com/iam/.
+   b. Select Users in the left navigation, then your target users
+   c. Go to the Security credentials tab.
+   d. Access keys, choose Create access key > Command Line Interface (CLI) > Next
+   e. Add optional tags, then Create access key
+   f. Show or Download .csv
+
+2. cmd> aws configure
+   Fill "AWS Access Key ID"
+   Fill "AWS Secret Access Key"
+
+What is running?
+~~~~~~~~~~~~~~~~
+1. See ec2 instance
+   cmd> aws ec2 describe-instances --filters "Name=instance-state-name,Values=running" --query "Reservations[*].Instances[*].InstanceId" --output text
+
+2. See ECS services:
+   cmd> aws ecs list-clusters
+   cmd> aws ecs list-services --cluster <your-cluster>
+
+3. Lambda functions:
+   cmd> aws lambda list-functions --query "Functions[?State=='Active'].FunctionName"
+
+4. EBS volumes attached
+   cmd> aws ec2 describe-volumes --filters "Name=status,Values=available,in-use"
+
+5. All Service Quotas services
+   cmd> aws service-quotas list-services --query "Services[].ServiceName" --output text
+
+6. Account Wide Usage Check
+   cmd> aws ce get-cost-and-usage --time-period Start=2026-02-01,End=2026-02-15 --granularity MONTHLY --metrics "UnblendedCost"
+  
+
+Disabling Lambda
+=================
+Lambda > Your function > Configuration > Concurrency > Edit > Reserve concurrency: 0 > Save. No one can call it now (even manual Test/CLI invokes fail). To re-enable: set to 1+ or delete: aws lambda delete-function --function-name hello-world-test.
+
